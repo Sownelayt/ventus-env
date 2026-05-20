@@ -8,4 +8,5 @@ regression-test-logs/
 rodinia_data.tar.xz
 __pycache__
 
+ventus-pytorch
 毕业论文
