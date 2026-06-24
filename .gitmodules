@@ -1,10 +1,10 @@
 [submodule "spike"]
 	path = spike
-	url = https://github.com/THU-DSP-LAB/ventus-gpgpu-isa-simulator.git
+	url = https://github.com/Sownelayt/ventus-gpgpu-isa-simulator.git
 	branch = develop
 [submodule "gpgpu"]
 	path = gpgpu
-	url = https://github.com/THU-DSP-LAB/ventus-gpgpu.git
+	url = https://github.com/Sownelayt/ventus-gpgpu.git
 	branch = develop
 [submodule "driver"]
 	path = driver
@@ -35,7 +35,7 @@
 	url = https://github.com/THU-DSP-LAB/OpenCL-CTS.git
 [submodule "testcases"]
 	path = testcases
-	url = https://github.com/THU-DSP-LAB/Ventus-OpenCL-Testcase.git
+	url = https://github.com/Sownelayt/Ventus-OpenCL-Testcase.git
 [submodule "sbtsim"]
 	path = sbtsim
 	url = https://github.com/THU-DSP-LAB/ventus-gpgpu-sbt-simulator.git
