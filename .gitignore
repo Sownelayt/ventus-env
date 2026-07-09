@@ -9,6 +9,7 @@ rodinia_data.tar.xz
 __pycache__
 
 ventus-pytorch
-毕业论文
 temp
 reference
+codex
+.ccache

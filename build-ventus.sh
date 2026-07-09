@@ -259,12 +259,13 @@ build_gpgpu_rtlsim() {
 }
 
 build_gvm() {
+  local gvm_trace=${GVM_TRACE:-0}
   cd ${GPGPU_DIR}/sim-verilator
-  make -f gvm.mk -j${BUILD_PARALLEL} RELEASE=1 GVM_TRACE=1 GVM_REF_DIR=${VENTUS_INSTALL_PREFIX}/lib
+  make -f gvm.mk -j${BUILD_PARALLEL} RELEASE=1 GVM_TRACE=${gvm_trace} GVM_REF_DIR=${VENTUS_INSTALL_PREFIX}/lib
   make -f gvm.mk install RELEASE=1 PREFIX=${VENTUS_INSTALL_PREFIX} GVM_REF_DIR=${VENTUS_INSTALL_PREFIX}/lib
 
   cd ${GPGPU_DIR}/sim-verilator-nocache
-  make -f gvm.mk -j${BUILD_PARALLEL} RELEASE=1 GVM_TRACE=1 GVM_REF_DIR=${VENTUS_INSTALL_PREFIX}/lib
+  make -f gvm.mk -j${BUILD_PARALLEL} RELEASE=1 GVM_TRACE=${gvm_trace} GVM_REF_DIR=${VENTUS_INSTALL_PREFIX}/lib
   make -f gvm.mk install RELEASE=1 PREFIX=${VENTUS_INSTALL_PREFIX} GVM_REF_DIR=${VENTUS_INSTALL_PREFIX}/lib
 }
 
