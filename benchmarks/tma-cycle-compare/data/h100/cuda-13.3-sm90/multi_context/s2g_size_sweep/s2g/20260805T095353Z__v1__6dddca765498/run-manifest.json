@@ -1,0 +1,95 @@
+{
+  "case_count": 60,
+  "case_matrix_sha256": "ac34656379417423f709a97ee33cdeaf4afda5a34f1849ab5f4a266726382836",
+  "command": [
+    "/home/liyb/tma-refer/.venv/bin/modal",
+    "run",
+    "/home/liyb/ventus-env/benchmarks/tma-cycle-compare/suites/multi_context/s2g_size_sweep/v1/modal_multi_context.py",
+    "--gpu",
+    "h100",
+    "--project",
+    "same",
+    "--direction",
+    "s2g",
+    "--output",
+    "/home/liyb/ventus-env/benchmarks/tma-cycle-compare/data/h100/cuda-13.3-sm90/multi_context/s2g_size_sweep/s2g/20260805T095353Z__v1__6dddca765498"
+  ],
+  "completed_at_utc": "2026-08-05T09:54:19.532427+00:00",
+  "device": {
+    "attempts": [
+      {
+        "child_timeout_seconds": 2,
+        "classification": "completed",
+        "command": [
+          "/opt/tma-multi-context/sm_90/probe",
+          "--project",
+          "same",
+          "--direction",
+          "s2g"
+        ],
+        "file": "attempt_01.json",
+        "function_timeout_seconds": 10,
+        "gpu": "h100",
+        "nvidia_smi_query": "NVIDIA H100 80GB HBM3, 9.0, 580.95.05, 1980, 81559\n",
+        "wall_seconds": 1.258024416
+      }
+    ],
+    "backend": "nvidia-hardware",
+    "class": "h100",
+    "compute_capability": "9.0",
+    "cuda": "13.3.0",
+    "driver": "580.95.05",
+    "l2_bytes": 52428800,
+    "name": "NVIDIA H100 80GB HBM3",
+    "sm_clock_mhz": 1980,
+    "suite_manifest": {
+      "completed_at_utc": "2026-08-05T09:54:19.532427+00:00",
+      "direction": "s2g",
+      "gpu": "h100",
+      "measurement_release": "ColdThenHotV1",
+      "paid_attempts": 1,
+      "pairing": "one new TensorMap bank per case; repeat 0 first-uses it and repeat 1 immediately reuses the exact same bank in the same kernel",
+      "project": "same",
+      "repeats": 2,
+      "rows": 120,
+      "source_sha256": "4f4572794336614d81ff9627505226af269f2834c33c2c475df5a55448a560c2",
+      "variant": "s2g",
+      "warmups": 0
+    }
+  },
+  "implementation": {
+    "release_state": "reference",
+    "version": "cuda-13.3-sm90"
+  },
+  "measurement": {
+    "context_definition": "one issuing thread batches N=1/2/4/8/16/32 commands in one CTA",
+    "data_residency": "each command owns a disjoint shared region and destination rows; only payload bytes vary",
+    "descriptor_residency": "each case owns a new same-map TensorMap; ordinary loads may make descriptor bytes L2-hot before repeat 0, while repeat 1 immediately reuses the same address and contents",
+    "direction_definition": "S2G only",
+    "duration_seconds": null,
+    "formal": true,
+    "paid_attempts": 1,
+    "pairing": "one new same-map TensorMap per byte-length/command-count case; repeat 0 first-uses it and repeat 1 immediately reuses the exact same descriptor in one kernel",
+    "registration_note": "GPU suite completed successfully; the local dispatcher was interrupted before registration, so only local validation and registration were recovered",
+    "repeats": 2,
+    "started_at_utc": null,
+    "wait_method": "issue all S2G commands, commit once, then cp.async.bulk.wait_group 0; total batch completion cycles",
+    "warmups": 0
+  },
+  "measurement_release": "ColdThenHotV1",
+  "resource_limited_case_count": 0,
+  "run_id": "20260805T095353Z__v1__6dddca765498",
+  "schema_version": 1,
+  "sources": {
+    "benchmarks/tma-cycle-compare/CURRENT_MEASUREMENT_RELEASE": "b3bf5b5ecbe6c61fedbb65ecce266531a2cb171f1162ef212c32c65d06ea253e",
+    "benchmarks/tma-cycle-compare/suites/multi_context/s2g_size_sweep/v1/cuda_multi_context.cu": "4f4572794336614d81ff9627505226af269f2834c33c2c475df5a55448a560c2",
+    "benchmarks/tma-cycle-compare/suites/multi_context/s2g_size_sweep/v1/modal_multi_context.py": "5654d6fda73798f4921fb1c5d3ccf3e2fb29ceb1e21d42928bf26eff6e16f5de",
+    "benchmarks/tma-cycle-compare/suites/multi_context/s2g_size_sweep/v1/suite.yaml": "e4b04cb5fd21f0c19d1eb6a179b31a66271a0e1cd4beebbf0662a52728849eb4"
+  },
+  "status": "passed",
+  "suite_id": "multi_context.s2g_size_sweep",
+  "suite_version": "v1",
+  "test_signature": "6dddca7654981c472ee5d1fbc15fa0ef09e9efc55da2ee9e11e10763a5eca26a",
+  "validation_problems": [],
+  "variant": "s2g"
+}

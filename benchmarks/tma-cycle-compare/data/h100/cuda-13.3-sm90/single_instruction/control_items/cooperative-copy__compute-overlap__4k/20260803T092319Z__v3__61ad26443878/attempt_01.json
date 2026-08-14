@@ -1,0 +1,22 @@
+{
+  "child_timeout_seconds": 2,
+  "classification": "completed",
+  "collected_at_utc": "2026-08-03T09:23:29.779646+00:00",
+  "command": [
+    "/opt/tma-control-items/sm_90/probe",
+    "--warmups",
+    "0",
+    "--repeats",
+    "2",
+    "--seeds",
+    "101",
+    "--suite",
+    "smoke",
+    "--csv"
+  ],
+  "function_timeout_seconds": 10,
+  "gpu": "h100",
+  "nvidia_smi_query": "NVIDIA H100 80GB HBM3, 9.0, 580.95.05, 1980\n",
+  "returncode": 0,
+  "wall_seconds": 0.6106934319999999
+}

@@ -1,0 +1,75 @@
+{
+  "version": "V3.3",
+  "release_state": "preflight_pending_dc",
+  "performance_gate_passed": true,
+  "performance_gate_failures": [],
+  "structure_gate_passed": true,
+  "area_gate_passed": null,
+  "pending_release_inputs": [
+    "mapped_dc_area_and_timing"
+  ],
+  "capacity_rows": 27,
+  "common_rows": 20,
+  "descriptor_rows": 30,
+  "uarch_rows": 39,
+  "uarch_pmu_rows": 36,
+  "best_capacity_change_percent": -1.7964,
+  "worst_capacity_change_percent": -0.2608,
+  "cycles_32k": {
+    "g2s": 765,
+    "s2g": 878,
+    "roundtrip": 1626
+  },
+  "descriptor_startup_cycles": {
+    "cold_demand": 213,
+    "consecutive_same_map_hit": 189,
+    "explicit_prefetch_then_demand": 189
+  },
+  "descriptor_startup_pmu": {
+    "maps_1_pf0": {
+      "demand_hits": 1,
+      "demand_misses": 2,
+      "prefetch_hits": 0,
+      "prefetch_misses": 0
+    },
+    "maps_1_pf1": {
+      "demand_hits": 3,
+      "demand_misses": 0,
+      "prefetch_hits": 1,
+      "prefetch_misses": 2
+    }
+  },
+  "capacity_resource_peaks": {
+    "max_transfer_slots": 24,
+    "max_global_requests": 16,
+    "max_shared_tags": 3,
+    "max_write_acks": 32
+  },
+  "capacity_fixed_cycle_decomposition": {
+    "g2s_non_active_cycles": 103,
+    "s2g_non_active_cycles": 68
+  },
+  "marginal_cycles_per_128b_16k_to_32k": {
+    "g2s": {
+      "h100": 1.15625,
+      "b200": 1.171875,
+      "v3_3": 2.5
+    },
+    "s2g": {
+      "h100": 4.0,
+      "b200": 4.0,
+      "v3_3": 3.015625
+    },
+    "roundtrip": {
+      "h100": 5.15625,
+      "b200": 5.15625,
+      "v3_3": 5.515625
+    }
+  },
+  "gvm_sha256": {
+    "with_cache": "3ee23185ce0973789a23023995f28282695df3ab27acd51394251cfcb732fe08",
+    "no_cache": "0e6377cb35babaea8ba3cdcb15337efa7099d7363af3896a1e946b5dc8eb63b4"
+  },
+  "rtl_manifest_sha256": "48bf492dd0ec6d8dc43df6eb07d787192507ddca3bb85f0468a164158badd802",
+  "rtl_structure_sha256": "94677059e5115ce24641631c89e3ea36d094d9fec2424b5c27b41b496b8b5f7d"
+}

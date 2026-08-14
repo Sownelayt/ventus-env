@@ -1,0 +1,127 @@
+{
+  "case_count": 182,
+  "case_matrix_sha256": "4b271cb003a7830a8d93a5e2f975c5a657d9d1ab3ae1bae91b2c65f88fe2cced",
+  "command": [
+    "/home/liyb/tma-refer/.venv/bin/modal",
+    "run",
+    "/home/liyb/ventus-env/benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/modal_tma_comprehensive_compare.py",
+    "--gpu",
+    "h100",
+    "--shard",
+    "tensor_2d_length",
+    "--warmups",
+    "0",
+    "--repeats",
+    "2",
+    "--output",
+    "/home/liyb/ventus-env/benchmarks/tma-cycle-compare/data/h100/cuda-13.3-sm90/single_instruction/tensor_2d_capacity/tensor__g2s-s2g__2d-length/20260803T092233Z__v4__8b79933f2071"
+  ],
+  "completed_at_utc": "2026-08-03T09:22:51.508473+00:00",
+  "device": {
+    "attempts": [
+      {
+        "child_timeout_seconds": 3,
+        "classification": "completed",
+        "command": [
+          "/opt/tma-comprehensive/artifacts/sm_90/cuda_tma_comprehensive",
+          "--shard",
+          "tensor_2d_length",
+          "--warmups",
+          "0",
+          "--repeats",
+          "2",
+          "--csv"
+        ],
+        "file": "tensor_2d_length.json",
+        "function_timeout_seconds": 10,
+        "gpu": "h100",
+        "nvidia_smi_query": "NVIDIA H100 80GB HBM3, 9.0, 580.95.05, 345, 81559\n",
+        "wall_seconds": 0.5273154950000001
+      }
+    ],
+    "backend": "nvidia-hardware",
+    "class": "h100",
+    "compute_capability": "9.0",
+    "cuda": "13.3.0",
+    "driver": "580.95.05",
+    "l2_bytes": 52428800,
+    "name": "NVIDIA H100 80GB HBM3",
+    "sm_clock_mhz": 345,
+    "suite_manifest": {
+      "completed_at_utc": "2026-08-03T09:22:50.232845+00:00",
+      "completed_shards": [
+        "tensor_2d_length"
+      ],
+      "function_timeout_seconds": 10,
+      "gpu": "h100",
+      "max_containers": 1,
+      "modal_retries": 0,
+      "paid_attempts": 1,
+      "repeats": 2,
+      "requested_case": "",
+      "requested_shards": [
+        "tensor_2d_length"
+      ],
+      "risk_child_timeout_seconds": 2,
+      "risk_outcomes": {
+        "interleave32": "not_requested",
+        "subbyte": "not_requested"
+      },
+      "safe_child_timeout_seconds": 3,
+      "sequential": true,
+      "sha256": {
+        "audit_fresh_tensormap.py": "2da68c2321dba0ffe9219c89e2daaa7aef345bc56b3d6e95134c8b305183e66c",
+        "cuda_tma_comprehensive.cu": "a3d534ac0d9835fd4aac5c5b1ef7c2a74dbd04a8b82a8c9aec139629ed29a01a",
+        "tma_comprehensive_matrix.h": "b04b48c8ddc77e4c89d9e528c0ca956ba5cd2f49dfeeb7d5bf6f4fabf5d4fefb",
+        "tma_model.cc": "d32abbbfe284cc18579adea89890fe8de1c34b040046523deca2841c7f127ab6",
+        "tma_model.h": "4be2214e940eb39e98024a740dc12067ea104a6bcc1db2858903caf28c6978fa",
+        "tma_ventus_parity_bench_v2.cu": "e6152c5e89ee08b85d389248fbe019e793fc24f1a89e0a52bea63a6b743ba6dd",
+        "ventus_tma_v2_spec.h": "0909686bb637e5e28d52dc7b9265e89a9a1a38aafdc5f1a4f18e99558169e261"
+      },
+      "warmups": 0
+    }
+  },
+  "forced_rerun_reason": "ColdThenHotV1: first TMAU use then immediate same-address reuse; no intervening acquire or prefetch",
+  "implementation": {
+    "release_state": "reference",
+    "version": "cuda-13.3-sm90"
+  },
+  "measurement": {
+    "context_definition": "one issuing thread, one measured command at a time",
+    "data_residency": "CUDA payload is L2-hot through ordinary ld.global.cg; Ventus uses the configured cache model",
+    "descriptor_residency": "each case has one new 4 KiB-spaced descriptor; repeat 0 has zero prior TMA use, repeat 1 reuses it after exactly one completed TMA; no prefetch.tensormap",
+    "direction_definition": "separate g2s and s2g measurements",
+    "duration_seconds": 17.811604,
+    "formal": true,
+    "paid_attempts": 1,
+    "pairing": "one new TensorMap per case; repeat 0 cold first use, repeat 1 immediate hot reuse of the same address and contents",
+    "repeats": 2,
+    "resumed_from": null,
+    "started_at_utc": "2026-08-03T09:22:33.696869+00:00",
+    "wait_method": "G2S mbarrier.test_wait polling; S2G cp.async.bulk.wait_group 0",
+    "warmups": 0
+  },
+  "measurement_release": "ColdThenHotV1",
+  "resource_limited_case_count": 0,
+  "run_id": "20260803T092233Z__v4__8b79933f2071",
+  "schema_version": 1,
+  "sources": {
+    "benchmarks/tma-cycle-compare/CURRENT_MEASUREMENT_RELEASE": "b3bf5b5ecbe6c61fedbb65ecce266531a2cb171f1162ef212c32c65d06ea253e",
+    "benchmarks/tma-cycle-compare/releases/ColdThenHotV1.json": "a8903a2fd670a309afba45f964bc92788a4f75b3b0daf8d30bef5e1a1f195e1a",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/audit_fresh_tensormap.py": "2da68c2321dba0ffe9219c89e2daaa7aef345bc56b3d6e95134c8b305183e66c",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/cuda_tma_comprehensive.cu": "a3d534ac0d9835fd4aac5c5b1ef7c2a74dbd04a8b82a8c9aec139629ed29a01a",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/modal_tma_comprehensive_compare.py": "3957dd68b2b0566dddbb9a1716d9eba87a9ff2e13aabbe2bae4f5d42124918ca",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/run_ventus_comprehensive_short.py": "e73b6e750e8cd5ed2407b8e8fd236bac9aa8565c43bdc2c2c6bbc971b8fc4e14",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/suite.yaml": "78286960c34abba8484b783e5e08b7e0f4c27c3a727a6bcb7ab6303da5c13ba0",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/tma_comprehensive_matrix.h": "b04b48c8ddc77e4c89d9e528c0ca956ba5cd2f49dfeeb7d5bf6f4fabf5d4fefb",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/ventus_tma_comprehensive.cl": "fa92bb615873047939615b15600c73dd759971e2e3b35e63a744264e3033e101",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/ventus_tma_comprehensive.cpp": "07d800c5a0552377b612d0c9b4fa765f2cd5134791d0944e299cac532d20c2ae",
+    "benchmarks/tma-cycle-compare/suites/single_instruction/tensor_2d_capacity/v4/ventus_tma_feature_parity.cl": "bfccb4281240484edbb887af46c0b9cfddb3430bc6cedd9ccf5ddf3a45f8b0fc"
+  },
+  "status": "passed",
+  "suite_id": "single_instruction.tensor_2d_capacity",
+  "suite_version": "v4",
+  "test_signature": "8b79933f20716b444b460b0b4665b28fe9ab45d2f05f8665b1ad173d6e765dc4",
+  "validation_problems": [],
+  "variant": "tensor__g2s-s2g__2d-length"
+}

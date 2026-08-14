@@ -1,0 +1,36 @@
+{
+  "launched_at": "2026-08-01T14:35:40+08:00",
+  "host": "liyb@192.168.122.2",
+  "remote_project": "/home/liyb/tma-dc/20260801_24_tma_v3_8_p96_matched_40x6_boundary_n12_tt1v85c_1500",
+  "tmux_session": "v38_p96_matched_40p6_1500",
+  "variant": "v3_8_p96_matched_line40_payload6_boundary_1500",
+  "purpose": "Matched P90-to-P96 library comparison with identical frozen V3.8 RTL and constraints",
+  "configuration": "40 LineContext + 6 PayloadSlot + 4 Descriptor + one CursorCarry elastic stage",
+  "technology": "TSMC N12 tcbn12ffcllbwp6t16p96cpdtt1v85c",
+  "library_db": "/vmshare/pdk/install/tsmc_n12_CLN12FFCLL/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn12ffcllbwp6t16p96cpd_120a/tcbn12ffcllbwp6t16p96cpdtt1v85c.db",
+  "operating_condition": "tt1v85c",
+  "corner": "TT 1.0V 85C",
+  "frequency_mhz": 1500,
+  "boundary_driving_cell": "BUFFD2BWP6T16P96CPD",
+  "timing_model": "boundary_typical",
+  "internal_wireload": "ZeroWireload",
+  "max_cores": 12,
+  "dc_timeout_seconds": 0,
+  "rtl_sha256": "b97fd25aba79773ef35940351dfaca84d5faf842de15984cc07ba00c31decc1c",
+  "matched_p90_project": "/home/liyb/tma-dc/20260801_23_tma_v3_8_cursor_pipeline_40x6_boundary_n12_tt1v85c_1500",
+  "precompile_dry_run": {
+    "status": "passed",
+    "dc_exit_status": 0,
+    "elapsed_seconds": 103,
+    "peak_memory_mbytes": 2035,
+    "evidence": "P96 library, tt1v85c operating condition, BUFFD2 boundary cell, ZeroWireload and required path groups passed analyze/elaborate/link before STOP_BEFORE_COMPILE"
+  },
+  "initial_health_check": {
+    "dc_exit_status": "RUNNING",
+    "tmux_alive": true,
+    "log_stage": "Presto RTL analysis",
+    "early_error_or_fatal": false
+  },
+  "comparison_rule": "Compare this run only with the frozen V3.8 P90 matched project to isolate the library architecture effect; do not attribute the delta to RTL changes.",
+  "monitoring_policy": "The formal run has no process timeout. Initial health was checked once; later result collection will read dc_exit.status and final reports."
+}

@@ -1,0 +1,17 @@
+gpu,cc,direction,prime_mode,stage,repeat,issue_cycles,completion_cycles,polls,errors,smid,descriptor_state,prefetch_lead_cycles,prior_measured_map_tma_use,static_rank,bytes
+NVIDIA H100 80GB HBM3,9.0,g2s,none,measured,0,111,397,5,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,g2s,none,measured,1,111,397,5,0,124,explicit_prefetch_hot,1024,1,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,none,measured,0,39,91,0,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,none,measured,1,39,91,0,0,124,explicit_prefetch_hot,1024,1,2,128
+NVIDIA H100 80GB HBM3,9.0,g2s,predicated_off_same_site,prime,-1,45,71,0,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,g2s,predicated_off_same_site,measured,0,111,397,5,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,g2s,predicated_off_same_site,measured,1,111,397,5,0,124,explicit_prefetch_hot,1024,1,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,predicated_off_same_site,prime,-1,15,35,0,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,predicated_off_same_site,measured,0,39,91,0,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,predicated_off_same_site,measured,1,39,91,0,0,124,explicit_prefetch_hot,1024,1,2,128
+NVIDIA H100 80GB HBM3,9.0,g2s,other_tensormap_same_site,prime,-1,111,397,5,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,g2s,other_tensormap_same_site,measured,0,111,397,5,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,g2s,other_tensormap_same_site,measured,1,111,397,5,0,124,explicit_prefetch_hot,1024,1,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,other_tensormap_same_site,prime,-1,39,91,0,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,other_tensormap_same_site,measured,0,39,91,0,0,124,explicit_prefetch_hot,1024,0,2,128
+NVIDIA H100 80GB HBM3,9.0,s2g,other_tensormap_same_site,measured,1,39,91,0,0,124,explicit_prefetch_hot,1024,1,2,128

@@ -1,0 +1,11 @@
+{
+  "case_timeout_seconds": 5.0,
+  "cases": 20,
+  "compile_timeout_seconds": 12.0,
+  "completed_at_utc": "2026-08-03T09:57:27.979671+00:00",
+  "device": "ventus",
+  "measurement_release": "ColdThenHotV1",
+  "pairing": "one descriptor per case; same-kernel first use then immediate reuse",
+  "repeats": 2,
+  "warmups": 0
+}

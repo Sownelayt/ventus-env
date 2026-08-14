@@ -1,0 +1,14 @@
+META,schema_version,2
+META,gpu,NVIDIA H100 80GB HBM3
+META,cc,9.0
+META,sm_count,132
+META,clock_khz,1980000
+META,warmups,0
+META,repeats,2
+META,seeds,101
+META,toolchain,CUDART_VERSION=13030;CUDA_VERSION=13030;driver=13030;runtime=13030
+META,suite,smoke
+META,descriptor,fresh_4k_global_pointer_per_repeat
+META,validation,bytewise_nonuniform
+META,event_ns,per_grid_iteration
+META,cycles,mean_cta_latency_per_repeat

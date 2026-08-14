@@ -1,0 +1,13 @@
+{
+  "child_timeout_seconds": 2,
+  "classification": "completed",
+  "collected_at_utc": "2026-08-03T09:27:27.435691+00:00",
+  "command": [
+    "/opt/tma-decode/sm_100/probe"
+  ],
+  "function_timeout_seconds": 10,
+  "gpu": "b200",
+  "nvidia_smi_query": "NVIDIA B200, 10.0, 580.95.05, 1965, 183359\n",
+  "returncode": 0,
+  "wall_seconds": 0.901275414
+}

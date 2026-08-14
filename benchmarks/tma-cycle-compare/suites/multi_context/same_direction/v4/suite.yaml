@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "suite_id": "multi_context.same_direction",
+  "suite_version": "v4",
+  "measurement_release": "ColdThenHotV1",
+  "supersedes": "v3; v4 records the unbacked-PDS limit of 32-CTA 4KiB G2S capture kernels instead of treating their deterministic correctness failure as timing data",
+  "scope": "multi_context",
+  "project": "same_direction",
+  "variants": ["g2s", "s2g"],
+  "formal": {"warmups": 0, "repeats": 2, "paid_attempts": 1},
+  "pairing": "one new TensorMap bank per case; repeat 0 first-uses it and repeat 1 immediately reuses the exact same bank in one kernel",
+  "expected_cases": {"h100": 108, "b200": 108, "ventus": {"g2s": 69, "s2g": 94}},
+  "resource_limited_cases": {"ventus": {"g2s": 39, "s2g": 14}},
+  "wait_method": "per-command independent completion objects; batch completion span",
+  "data_residency": "distinct global lines and shared regions; no line-merge aliasing",
+  "descriptor_residency": "each case owns a new bank; ordinary loads may make descriptor bytes L2-hot, but no TMA/prefetch touches it before repeat 0; repeat 1 reuses the same address and contents",
+  "direction_definition": "independent g2s and s2g projects",
+  "context_definition": "same issuing thread serial/batched or occupancy-safe independent CTAs, N=1/2/4/8/16/32",
+  "coverage": "intra-CTA issuing-thread batches and occupancy-safe cooperative multi-CTA batches",
+  "sources": [
+    "cuda_multi_context.cu",
+    "modal_multi_context.py",
+    "ventus_multi_context.cpp",
+    "ventus_multi_context.cl",
+    "run_ventus_multi_context_short.py"
+  ],
+  "commands": {
+    "h100": ["{modal}", "run", "{suite}/modal_multi_context.py", "--gpu", "h100", "--project", "same", "--direction", "{variant}", "--output", "{output}"],
+    "b200": ["{modal}", "run", "{suite}/modal_multi_context.py", "--gpu", "b200", "--project", "same", "--direction", "{variant}", "--output", "{output}"],
+    "ventus": ["python3", "{suite}/run_ventus_multi_context_short.py", "--project", "same", "--direction", "{variant}", "--output", "{output}"]
+  }
+}

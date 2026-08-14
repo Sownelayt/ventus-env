@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "suite_id": "single_instruction.tensor_2d_capacity",
+  "suite_version": "v4",
+  "measurement_release": "ColdThenHotV1",
+  "supersedes": "v3; v3 incorrectly used two different cold TensorMaps for repeat 0/1",
+  "scope": "single_instruction",
+  "project": "tensor_2d_capacity",
+  "variants": ["tensor__g2s-s2g__2d-length"],
+  "formal": {"warmups": 0, "repeats": 2, "paid_attempts": 1},
+  "pairing": "one new TensorMap per case; repeat 0 cold first use, repeat 1 immediate hot reuse of the same address and contents",
+  "fresh_tensormap_required": true,
+  "wait_method": "G2S mbarrier.test_wait polling; S2G cp.async.bulk.wait_group 0",
+  "data_residency": "CUDA payload is L2-hot through ordinary ld.global.cg; Ventus uses the configured cache model",
+  "descriptor_residency": "each case has one new 4 KiB-spaced descriptor; repeat 0 has zero prior TMA use, repeat 1 reuses it after exactly one completed TMA; no prefetch.tensormap",
+  "direction_definition": "separate g2s and s2g measurements",
+  "context_definition": "one issuing thread, one measured command at a time",
+  "coverage": "182 direction-first 2D Tensor length cases",
+  "expected_cases": {"h100": 182, "b200": 182, "ventus": 182},
+  "sources": [
+    "cuda_tma_comprehensive.cu",
+    "tma_comprehensive_matrix.h",
+    "modal_tma_comprehensive_compare.py",
+    "audit_fresh_tensormap.py",
+    "ventus_tma_comprehensive.cpp",
+    "ventus_tma_comprehensive.cl",
+    "ventus_tma_feature_parity.cl",
+    "run_ventus_comprehensive_short.py"
+  ],
+  "commands": {
+    "h100": ["{modal}", "run", "{suite}/modal_tma_comprehensive_compare.py", "--gpu", "h100", "--shard", "tensor_2d_length", "--warmups", "0", "--repeats", "2", "--output", "{output}"],
+    "b200": ["{modal}", "run", "{suite}/modal_tma_comprehensive_compare.py", "--gpu", "b200", "--shard", "tensor_2d_length", "--warmups", "0", "--repeats", "2", "--output", "{output}"],
+    "ventus": ["python3", "{suite}/run_ventus_comprehensive_short.py", "--shard", "tensor_2d_length", "--warmups", "0", "--repeats", "2", "--output", "{output}"]
+  }
+}

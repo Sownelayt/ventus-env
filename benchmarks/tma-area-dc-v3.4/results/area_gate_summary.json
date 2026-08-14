@@ -1,0 +1,24 @@
+{
+  "v3_3_release": {
+    "report_dir": "benchmarks/tma-area-dc-v3.3/results/v3_3_release/report",
+    "total_cell_area": 186040.853345,
+    "wns_ns": -0.2178,
+    "frequency_mhz": 1500,
+    "corner": "tcbn12ffcllbwp16p90cpdtt1v85c"
+  },
+  "v3_4_release": {
+    "report_dir": "benchmarks/tma-area-dc-v3.4/results/v3_4_release_40x6_desc4/report",
+    "total_cell_area": 102368.916017,
+    "wns_ns": -0.2268,
+    "frequency_mhz": 1500,
+    "corner": "tcbn12ffcllbwp16p90cpdtt1v85c"
+  },
+  "area_delta": -83671.93732800001,
+  "area_reduction_percent": 44.975,
+  "gates": {
+    "area_not_above_v3_3": true,
+    "area_reduction_ge_15_percent": true,
+    "wns_non_negative": false
+  },
+  "all_gates_passed": false
+}

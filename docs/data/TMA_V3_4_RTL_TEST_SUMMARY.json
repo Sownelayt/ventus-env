@@ -1,0 +1,56 @@
+{
+  "release": "V3.4",
+  "configuration": "40 LineContext + 6 PayloadSlot + 4 Descriptor",
+  "date": "2026-07-31",
+  "tests": [
+    {
+      "suite": "DmaTest.TmaV2Frontend_test",
+      "passed": 8,
+      "failed": 0,
+      "elapsed": "1m14s"
+    },
+    {
+      "suite": "DmaTest.TmaV2Backend_test",
+      "passed": 17,
+      "failed": 0,
+      "elapsed": "8m06s"
+    },
+    {
+      "suite": "DmaTest.TmaV2DmaCore_test",
+      "passed": 19,
+      "failed": 0,
+      "elapsed": "22m16s"
+    },
+    {
+      "suite": "TmaV2Completion_test + TmaV2GroupTracker_test",
+      "passed": 10,
+      "failed": 0,
+      "elapsed": "40s"
+    },
+    {
+      "suite": "DmaTest.TmaV34DecoupledBufferPrototype_test",
+      "passed": 2,
+      "failed": 0,
+      "elapsed": "5.5s"
+    }
+  ],
+  "gvm_regressions": {
+    "descriptor_layout_rows": 30,
+    "common_non_reduce_rows": 20,
+    "capacity_rows": 27,
+    "uarch_success_rows": 13,
+    "errors": 0
+  },
+  "throughput_evidence": {
+    "contiguous_lines": 256,
+    "issue_span_cycles": 255,
+    "reorder_lines": 128,
+    "reorder_max_line_contexts": 40,
+    "reorder_max_payload_slots": 6,
+    "reorder_response_stalls": 47
+  },
+  "notes": [
+    "The three large suites printed all cases passed and exited successfully.",
+    "A parallel Mill invocation later reported a shared out.json FileAlreadyExistsException; isolated completion/group and prototype reruns passed, so this was report-cache contention rather than a DUT failure."
+  ]
+}

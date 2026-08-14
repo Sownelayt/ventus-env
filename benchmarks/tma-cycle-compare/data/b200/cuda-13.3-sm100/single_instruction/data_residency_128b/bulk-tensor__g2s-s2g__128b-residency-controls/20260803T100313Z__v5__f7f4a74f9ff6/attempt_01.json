@@ -1,0 +1,74 @@
+{
+  "child_timeout_seconds": 2,
+  "classification": "completed",
+  "collected_at_utc": "2026-08-03T10:03:27.096425+00:00",
+  "command": [
+    [
+      "/opt/tma-data-residency/sm_100/probe",
+      "bulk",
+      "g2s"
+    ],
+    [
+      "/opt/tma-data-residency/sm_100/probe",
+      "bulk",
+      "s2g"
+    ],
+    [
+      "/opt/tma-data-residency/sm_100/probe",
+      "tensor",
+      "g2s"
+    ],
+    [
+      "/opt/tma-data-residency/sm_100/probe",
+      "tensor",
+      "s2g"
+    ]
+  ],
+  "function_timeout_seconds": 10,
+  "gpu": "b200",
+  "nvidia_smi_query": "NVIDIA B200, 10.0, 580.95.05, 1965\n",
+  "returncode": 0,
+  "shards": [
+    {
+      "classification": "completed",
+      "command": [
+        "/opt/tma-data-residency/sm_100/probe",
+        "bulk",
+        "g2s"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.253971136
+    },
+    {
+      "classification": "completed",
+      "command": [
+        "/opt/tma-data-residency/sm_100/probe",
+        "bulk",
+        "s2g"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.3496664409999999
+    },
+    {
+      "classification": "completed",
+      "command": [
+        "/opt/tma-data-residency/sm_100/probe",
+        "tensor",
+        "g2s"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.2774478189999998
+    },
+    {
+      "classification": "completed",
+      "command": [
+        "/opt/tma-data-residency/sm_100/probe",
+        "tensor",
+        "s2g"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.1446730189999998
+    }
+  ],
+  "wall_seconds": 5.025847363
+}

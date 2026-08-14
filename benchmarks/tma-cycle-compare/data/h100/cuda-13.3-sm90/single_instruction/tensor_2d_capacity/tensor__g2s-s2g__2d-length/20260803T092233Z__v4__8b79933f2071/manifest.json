@@ -1,0 +1,33 @@
+{
+  "completed_at_utc": "2026-08-03T09:22:50.232845+00:00",
+  "completed_shards": [
+    "tensor_2d_length"
+  ],
+  "function_timeout_seconds": 10,
+  "gpu": "h100",
+  "max_containers": 1,
+  "modal_retries": 0,
+  "paid_attempts": 1,
+  "repeats": 2,
+  "requested_case": "",
+  "requested_shards": [
+    "tensor_2d_length"
+  ],
+  "risk_child_timeout_seconds": 2,
+  "risk_outcomes": {
+    "interleave32": "not_requested",
+    "subbyte": "not_requested"
+  },
+  "safe_child_timeout_seconds": 3,
+  "sequential": true,
+  "sha256": {
+    "audit_fresh_tensormap.py": "2da68c2321dba0ffe9219c89e2daaa7aef345bc56b3d6e95134c8b305183e66c",
+    "cuda_tma_comprehensive.cu": "a3d534ac0d9835fd4aac5c5b1ef7c2a74dbd04a8b82a8c9aec139629ed29a01a",
+    "tma_comprehensive_matrix.h": "b04b48c8ddc77e4c89d9e528c0ca956ba5cd2f49dfeeb7d5bf6f4fabf5d4fefb",
+    "tma_model.cc": "d32abbbfe284cc18579adea89890fe8de1c34b040046523deca2841c7f127ab6",
+    "tma_model.h": "4be2214e940eb39e98024a740dc12067ea104a6bcc1db2858903caf28c6978fa",
+    "tma_ventus_parity_bench_v2.cu": "e6152c5e89ee08b85d389248fbe019e793fc24f1a89e0a52bea63a6b743ba6dd",
+    "ventus_tma_v2_spec.h": "0909686bb637e5e28d52dc7b9265e89a9a1a38aafdc5f1a4f18e99558169e261"
+  },
+  "warmups": 0
+}

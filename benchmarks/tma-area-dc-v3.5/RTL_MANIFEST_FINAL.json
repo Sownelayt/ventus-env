@@ -1,0 +1,54 @@
+{
+  "variant": {
+    "name": "v3_5_release_40x6_desc4",
+    "design_top": "tma",
+    "rtl": "gpgpu/generated-tma-v2-v3.5/tma.sv",
+    "line_context_entries": 40,
+    "payload_entries": 6,
+    "shared_entries": 8,
+    "write_ack_entries": 32,
+    "descriptor_entries": 4,
+    "pmu_elaborated": false
+  },
+  "technology": {
+    "process": "TSMC N12 CLN12FFCLL",
+    "library": "tcbn12ffcllbwp16p90cpdtt1v85c",
+    "corner": "TT 1.0V 85C",
+    "frequency_mhz": 1500,
+    "max_cores_per_project": 12
+  },
+  "timing_models": {
+    "zero_wire": {
+      "description": "Historical matched model: ZeroWireload and no I/O boundary budget"
+    },
+    "boundary_typical": {
+      "description": "Estimated block boundary model with BUFFD2 input drive, 10 fF output load, 0.12 ns max I/O delay and 0.12 ns maximum transition",
+      "input_delay_max_ns": 0.12,
+      "input_delay_min_ns": 0.03,
+      "output_delay_max_ns": 0.12,
+      "output_delay_min_ns": 0.03,
+      "output_load_pf": 0.01,
+      "max_transition_ns": 0.12,
+      "max_fanout": 16,
+      "driving_cell": "BUFFD2BWP16P90CPD"
+    }
+  },
+  "source": "gpgpu/generated-tma-v2-v3.5/tma.sv",
+  "source_sha256": "9255600bbdf1e72de4a9fd786293f2b469ed4f8e8a91e2f67ffbe50150c3974d",
+  "structure_summary_sha256": "e6fee71fee2b76a712edc9a5266705daf2165d17f1a5121c817bc71b56542cbf",
+  "projects": {
+    "zero_wire": {
+      "project": "benchmarks/tma-area-dc-v3.5/release-project/v3_5_release_40x6_desc4_zero_wire",
+      "packaged_rtl": "benchmarks/tma-area-dc-v3.5/release-project/v3_5_release_40x6_desc4_zero_wire/rtl/tma.sv",
+      "bytes": 1828608,
+      "sha256": "9255600bbdf1e72de4a9fd786293f2b469ed4f8e8a91e2f67ffbe50150c3974d"
+    },
+    "boundary_typical": {
+      "project": "benchmarks/tma-area-dc-v3.5/release-project/v3_5_release_40x6_desc4_boundary_typical",
+      "packaged_rtl": "benchmarks/tma-area-dc-v3.5/release-project/v3_5_release_40x6_desc4_boundary_typical/rtl/tma.sv",
+      "bytes": 1828608,
+      "sha256": "9255600bbdf1e72de4a9fd786293f2b469ed4f8e8a91e2f67ffbe50150c3974d"
+    }
+  },
+  "rtl_identity_verified": true
+}

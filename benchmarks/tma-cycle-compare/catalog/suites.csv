@@ -1,0 +1,11 @@
+suite_id,suite_version,scope,project,variants,path
+multi_context.mixed_direction,v3,multi_context,mixed_direction,mixed,suites/multi_context/mixed_direction/v3/suite.yaml
+multi_context.s2g_size_sweep,v1,multi_context,s2g_size_sweep,s2g,suites/multi_context/s2g_size_sweep/v1/suite.yaml
+multi_context.same_direction,v4,multi_context,same_direction,g2s;s2g,suites/multi_context/same_direction/v4/suite.yaml
+single_instruction.common_matrix,v4,single_instruction,common_matrix,bulk-tensor__g2s-s2g-roundtrip__safe-nonreduce,suites/single_instruction/common_matrix/v4/suite.yaml
+single_instruction.completion_latency,v12,single_instruction,completion_latency,bulk-tensor__g2s__fresh-map-common;tensor__g2s__fresh-map-2d,suites/single_instruction/completion_latency/v12/suite.yaml
+single_instruction.control_items,v3,single_instruction,control_items,cooperative-copy__compute-overlap__4k,suites/single_instruction/control_items/v3/suite.yaml
+single_instruction.data_residency_128b,v5,single_instruction,data_residency_128b,bulk-tensor__g2s-s2g__128b-residency-controls,suites/single_instruction/data_residency_128b/v5/suite.yaml
+single_instruction.tensor_2d_capacity,v4,single_instruction,tensor_2d_capacity,tensor__g2s-s2g__2d-length,suites/single_instruction/tensor_2d_capacity/v4/suite.yaml
+single_instruction.tensormap_decode,v4,single_instruction,tensormap_decode,bulk-tensor__g2s-s2g__rank1-5,suites/single_instruction/tensormap_decode/v4/suite.yaml
+single_instruction.tensormap_issue_attribution,v1,single_instruction,tensormap_issue_attribution,tensor2d-128b__g2s-s2g,suites/single_instruction/tensormap_issue_attribution/v1/suite.yaml

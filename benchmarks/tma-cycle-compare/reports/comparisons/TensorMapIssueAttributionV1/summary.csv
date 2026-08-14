@@ -1,0 +1,13 @@
+device,direction,prime_mode,first_issue_cycles,second_issue_cycles,issue_delta,first_completion_cycles,second_completion_cycles,false_or_prime_issue_cycles,interpretation
+h100,g2s,none,111,111,0,397,397,,fixed-site baseline
+h100,g2s,predicated_off_same_site,111,111,0,397,397,45,front-end/control-flow prime only
+h100,g2s,other_tensormap_same_site,111,111,0,397,397,111,full-path prime with a different map
+h100,s2g,none,39,39,0,91,91,,fixed-site baseline
+h100,s2g,predicated_off_same_site,39,39,0,91,91,15,front-end/control-flow prime only
+h100,s2g,other_tensormap_same_site,39,39,0,91,91,39,full-path prime with a different map
+b200,g2s,none,96,96,0,434,434,,fixed-site baseline
+b200,g2s,predicated_off_same_site,96,96,0,435,434,51,front-end/control-flow prime only
+b200,g2s,other_tensormap_same_site,96,96,0,434,434,96,full-path prime with a different map
+b200,s2g,none,22,22,0,73,73,,fixed-site baseline
+b200,s2g,predicated_off_same_site,22,22,0,73,73,18,front-end/control-flow prime only
+b200,s2g,other_tensormap_same_site,22,22,0,73,73,22,full-path prime with a different map

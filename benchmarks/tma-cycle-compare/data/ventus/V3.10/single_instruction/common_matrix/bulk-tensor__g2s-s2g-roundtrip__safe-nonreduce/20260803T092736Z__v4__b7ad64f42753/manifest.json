@@ -1,0 +1,19 @@
+{
+  "attempts": 1,
+  "cases_completed": 334,
+  "cases_requested": 334,
+  "completed_at_utc": "2026-08-03T09:44:41.828880+00:00",
+  "large_timeout_seconds": 60.0,
+  "repeats": 2,
+  "risk_timeout_seconds": 2.0,
+  "safe_timeout_seconds": 8.0,
+  "shards": [
+    "bulk",
+    "tensor_capacity",
+    "tensor_geometry",
+    "dtype",
+    "layout",
+    "interleave16"
+  ],
+  "warmups": 0
+}

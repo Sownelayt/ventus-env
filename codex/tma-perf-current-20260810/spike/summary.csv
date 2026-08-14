@@ -1,0 +1,7 @@
+case,backend,rc,time_s,run_log
+dma_tma_g2s_pingpong_perf_full,spike,0,79,/home/liyb/ventus-env/testcases/_get_case/dma_tma_g2s_pingpong_perf_test/log/dma_tma_g2s_pingpong_perf_full.spike.20260810-194505.run.log
+dma_tma_tensor_s2g_pingpong_manual_input_perf_full,spike,0,89,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_s2g_pingpong_perf_test/log/dma_tma_tensor_s2g_pingpong_manual_input_perf_full.spike.20260810-194505.run.log
+dma_tma_tensor_s2g_pingpong_tma_input_perf_full,spike,0,57,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_s2g_pingpong_perf_test/log/dma_tma_tensor_s2g_pingpong_tma_input_perf_full.spike.20260810-194505.run.log
+dma_tma_tensor_feature_perf_stress,spike,0,63,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_feature_perf_test/log/dma_tma_tensor_feature_perf_stress.spike.20260810-194505.run.log
+dma_tma_v2_bidirectional_contention_profile,spike,0,119,/home/liyb/ventus-env/testcases/_get_case/dma_tma_bidirectional_contention_perf_test/log/dma_tma_v2_bidirectional_contention_profile.spike.20260810-194505.run.log
+dma_tma_v2_reduce_profile,spike,0,1,/home/liyb/ventus-env/testcases/_get_case/dma_tma_v2_reduce_perf_test/log/dma_tma_v2_reduce_profile.spike.20260810-194505.run.log

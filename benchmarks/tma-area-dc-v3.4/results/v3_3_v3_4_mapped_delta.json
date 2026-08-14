@@ -1,0 +1,704 @@
+{
+  "conditions": {
+    "process": "TSMC N12",
+    "library": "tcbn12ffcllbwp16p90cpdtt1v85c",
+    "corner": "TT 1.0V 85C",
+    "frequency_mhz": 1500
+  },
+  "v3_3": {
+    "ports": 35448,
+    "nets": 547437,
+    "cells": 511400,
+    "combinational_cells": 461051,
+    "sequential_cells": 50341,
+    "buf_inv": 57504,
+    "combinational_area": 135795.191993,
+    "noncombinational_area": 50245.661352,
+    "total_cell_area": 186040.853345
+  },
+  "v3_4": {
+    "ports": 30788,
+    "nets": 366251,
+    "cells": 336649,
+    "combinational_cells": 309461,
+    "sequential_cells": 27181,
+    "buf_inv": 45101,
+    "combinational_area": 77731.696612,
+    "noncombinational_area": 24637.219404,
+    "total_cell_area": 102368.916017
+  },
+  "legacy_v2_unmatched_corner": {
+    "ports": 17932,
+    "nets": 178355,
+    "cells": 166827,
+    "combinational_cells": 145275,
+    "sequential_cells": 21549,
+    "buf_inv": 21045,
+    "combinational_area": 37080.063972,
+    "noncombinational_area": 19053.843956,
+    "total_cell_area": 56133.907928,
+    "library": "tcbn12ffcllbwp16p90cpdtt0p8v25c",
+    "corner": "TT 0.8V 25C",
+    "synthesis_frequency_mhz": 1600,
+    "report_frequency_mhz": 1500,
+    "line_entries": 4,
+    "descriptor_entries": 2
+  },
+  "top_delta": {
+    "ports": {
+      "absolute": -4660.0,
+      "percent": -13.14601670051907
+    },
+    "nets": {
+      "absolute": -181186.0,
+      "percent": -33.09714177156459
+    },
+    "cells": {
+      "absolute": -174751.0,
+      "percent": -34.171098944075084
+    },
+    "combinational_cells": {
+      "absolute": -151590.0,
+      "percent": -32.87922594246624
+    },
+    "sequential_cells": {
+      "absolute": -23160.0,
+      "percent": -46.00623746051926
+    },
+    "buf_inv": {
+      "absolute": -12403.0,
+      "percent": -21.568934335002787
+    },
+    "combinational_area": {
+      "absolute": -58063.495380999986,
+      "percent": -42.75813784628918
+    },
+    "noncombinational_area": {
+      "absolute": -25608.441948000003,
+      "percent": -50.966474037624884
+    },
+    "total_cell_area": {
+      "absolute": -83671.93732800001,
+      "percent": -44.97503415168504
+    }
+  },
+  "v3_4_vs_legacy_unmatched_corner": {
+    "ports": {
+      "absolute": 12856.0,
+      "percent": 71.69306268124025
+    },
+    "nets": {
+      "absolute": 187896.0,
+      "percent": 105.34944352555296
+    },
+    "cells": {
+      "absolute": 169822.0,
+      "percent": 101.79527294742456
+    },
+    "combinational_cells": {
+      "absolute": 164186.0,
+      "percent": 113.01738082946136
+    },
+    "sequential_cells": {
+      "absolute": 5632.0,
+      "percent": 26.13578356304236
+    },
+    "buf_inv": {
+      "absolute": 24056.0,
+      "percent": 114.30743644571155
+    },
+    "combinational_area": {
+      "absolute": 40651.632639999996,
+      "percent": 109.63204559381819
+    },
+    "noncombinational_area": {
+      "absolute": 5583.375447999999,
+      "percent": 29.303144609000586
+    },
+    "total_cell_area": {
+      "absolute": 46235.008088999995,
+      "percent": 82.36556084479847
+    }
+  },
+  "hierarchy": [
+    {
+      "module": "TmaV2CommandBinder",
+      "v3_3_total": 4714.6407,
+      "v3_4_total": 3591.2679,
+      "total_delta": -1123.3728,
+      "v3_3_local_comb": 3622.994,
+      "v3_4_local_comb": 3293.4989,
+      "local_comb_delta": -329.4951000000001,
+      "v3_3_local_seq": 1091.6467,
+      "v3_4_local_seq": 297.769,
+      "local_seq_delta": -793.8777
+    },
+    {
+      "module": "TmaV2DescriptorCompiler",
+      "v3_3_total": 3484.322,
+      "v3_4_total": 2910.7642,
+      "total_delta": -573.5578,
+      "v3_3_local_comb": 2766.7527,
+      "v3_4_local_comb": 2758.4583,
+      "local_comb_delta": -8.294400000000223,
+      "v3_3_local_seq": 717.5693,
+      "v3_4_local_seq": 152.3059,
+      "local_seq_delta": -565.2634
+    },
+    {
+      "module": "TmaV2DescriptorService",
+      "v3_3_total": 7663.4555,
+      "v3_4_total": 7431.2123,
+      "total_delta": -232.2431999999999,
+      "v3_3_local_comb": 1501.5456,
+      "v3_4_local_comb": 2013.5693,
+      "local_comb_delta": 512.0237000000002,
+      "v3_3_local_seq": 2677.5879,
+      "v3_4_local_seq": 2506.8787,
+      "local_seq_delta": -170.70919999999978
+    },
+    {
+      "module": "TmaV2WindowEngine",
+      "v3_3_total": 145388.8579,
+      "v3_4_total": 64656.9745,
+      "total_delta": -80731.8834,
+      "v3_3_local_comb": 108405.2167,
+      "v3_4_local_comb": 48155.4729,
+      "local_comb_delta": -60249.743800000004,
+      "v3_3_local_seq": 36983.6413,
+      "v3_4_local_seq": 16501.5016,
+      "local_seq_delta": -20482.139700000003
+    },
+    {
+      "module": "TmaV2WindowPlanner",
+      "v3_3_total": 25152.7683,
+      "v3_4_total": 23933.8025,
+      "total_delta": -1218.9657999999981,
+      "v3_3_local_comb": 17917.252,
+      "v3_4_local_comb": 20124.3919,
+      "local_comb_delta": 2207.1398999999983,
+      "v3_3_local_seq": 7235.5163,
+      "v3_4_local_seq": 3809.4106,
+      "local_seq_delta": -3426.1057
+    },
+    {
+      "module": "TmaV2WindowSubsystem",
+      "v3_3_total": 153052.4689,
+      "v3_4_total": 72088.1867,
+      "total_delta": -80964.2822,
+      "v3_3_local_comb": 0.1555,
+      "v3_4_local_comb": 0.0,
+      "local_comb_delta": -0.1555,
+      "v3_3_local_seq": 0.0,
+      "v3_4_local_seq": 0.0,
+      "local_seq_delta": 0.0
+    },
+    {
+      "module": "TmaV3Ingress",
+      "v3_3_total": 32602.9022,
+      "v3_4_total": 29898.513,
+      "total_delta": -2704.3892000000014,
+      "v3_3_local_comb": 1225.9642,
+      "v3_4_local_comb": 1034.2599,
+      "local_comb_delta": -191.70429999999988,
+      "v3_3_local_seq": 1509.529,
+      "v3_4_local_seq": 1339.1828,
+      "local_seq_delta": -170.34619999999995
+    },
+    {
+      "module": "tma",
+      "v3_3_total": 186040.8533,
+      "v3_4_total": 102368.916,
+      "total_delta": -83671.93729999999,
+      "v3_3_local_comb": 13.9968,
+      "v3_4_local_comb": 352.0454,
+      "local_comb_delta": 338.04859999999996,
+      "v3_3_local_seq": 0.0,
+      "v3_4_local_seq": 30.1709,
+      "local_seq_delta": 30.1709
+    }
+  ],
+  "hierarchy_accounting": [
+    {
+      "logical_path": "tma",
+      "depth": 0,
+      "row_kind": "root_parent",
+      "module_design": "tma",
+      "parent_logical_path": "",
+      "direct_children": "tma/Ingress;tma/WindowSubsystem",
+      "area_accounting": "hierarchical_total=self_total+direct_children_total;do_not_sum_parent_and_child_rows",
+      "v3_3_report_path": "tma + core local-only wrapper",
+      "v3_4_report_path": "tma",
+      "v3_3_hierarchical_total": 186040.8533,
+      "v3_4_hierarchical_total": 102368.916,
+      "hierarchical_total_delta": -83671.93729999999,
+      "hierarchical_total_delta_percent": -44.97503414751323,
+      "v3_3_self_comb": 355.3114,
+      "v3_4_self_comb": 352.0454,
+      "self_comb_delta": -3.2660000000000196,
+      "v3_3_self_seq": 30.1709,
+      "v3_4_self_seq": 30.1709,
+      "self_seq_delta": 0.0,
+      "v3_3_self_total": 385.4823,
+      "v3_4_self_total": 382.2163,
+      "self_total_delta": -3.2660000000000196,
+      "v3_3_direct_children_total": 185655.37110000002,
+      "v3_4_direct_children_total": 101986.6997,
+      "v3_3_reconstruction_error": -0.00010000003385357559,
+      "v3_4_reconstruction_error": 0.0
+    },
+    {
+      "logical_path": "tma/Ingress",
+      "depth": 1,
+      "row_kind": "parent",
+      "module_design": "TmaV3Ingress",
+      "parent_logical_path": "tma",
+      "direct_children": "tma/Ingress/CommandBinder;tma/Ingress/WindowPlanner",
+      "area_accounting": "hierarchical_total=self_total+direct_children_total;do_not_sum_parent_and_child_rows",
+      "v3_3_report_path": "core/ingress",
+      "v3_4_report_path": "core_ingress",
+      "v3_3_hierarchical_total": 32602.9022,
+      "v3_4_hierarchical_total": 29898.513,
+      "hierarchical_total_delta": -2704.3892000000014,
+      "hierarchical_total_delta_percent": -8.294933939960725,
+      "v3_3_self_comb": 1225.9642,
+      "v3_4_self_comb": 1034.2599,
+      "self_comb_delta": -191.70429999999988,
+      "v3_3_self_seq": 1509.529,
+      "v3_4_self_seq": 1339.1828,
+      "self_seq_delta": -170.34619999999995,
+      "v3_3_self_total": 2735.4932,
+      "v3_4_self_total": 2373.4427,
+      "self_total_delta": -362.05049999999983,
+      "v3_3_direct_children_total": 29867.409,
+      "v3_4_direct_children_total": 27525.0704,
+      "v3_3_reconstruction_error": 0.0,
+      "v3_4_reconstruction_error": -0.00010000000111176632
+    },
+    {
+      "logical_path": "tma/Ingress/CommandBinder",
+      "depth": 2,
+      "row_kind": "leaf",
+      "module_design": "TmaV2CommandBinder",
+      "parent_logical_path": "tma/Ingress",
+      "direct_children": "",
+      "area_accounting": "leaf:hierarchical_total=self_total",
+      "v3_3_report_path": "core/ingress/binder",
+      "v3_4_report_path": "core_ingress/binder",
+      "v3_3_hierarchical_total": 4714.6407,
+      "v3_4_hierarchical_total": 3591.2679,
+      "hierarchical_total_delta": -1123.3728,
+      "hierarchical_total_delta_percent": -23.827325802367085,
+      "v3_3_self_comb": 3622.994,
+      "v3_4_self_comb": 3293.4989,
+      "self_comb_delta": -329.4951000000001,
+      "v3_3_self_seq": 1091.6467,
+      "v3_4_self_seq": 297.769,
+      "self_seq_delta": -793.8777,
+      "v3_3_self_total": 4714.6407,
+      "v3_4_self_total": 3591.2679,
+      "self_total_delta": -1123.3728,
+      "v3_3_direct_children_total": 0,
+      "v3_4_direct_children_total": 0,
+      "v3_3_reconstruction_error": 0.0,
+      "v3_4_reconstruction_error": 0.0
+    },
+    {
+      "logical_path": "tma/Ingress/WindowPlanner",
+      "depth": 2,
+      "row_kind": "leaf",
+      "module_design": "TmaV2WindowPlanner",
+      "parent_logical_path": "tma/Ingress",
+      "direct_children": "",
+      "area_accounting": "leaf:hierarchical_total=self_total",
+      "v3_3_report_path": "core/ingress/windowPlanner",
+      "v3_4_report_path": "core_ingress/windowPlanner",
+      "v3_3_hierarchical_total": 25152.7683,
+      "v3_4_hierarchical_total": 23933.8025,
+      "hierarchical_total_delta": -1218.9657999999981,
+      "hierarchical_total_delta_percent": -4.846249070723552,
+      "v3_3_self_comb": 17917.252,
+      "v3_4_self_comb": 20124.3919,
+      "self_comb_delta": 2207.1398999999983,
+      "v3_3_self_seq": 7235.5163,
+      "v3_4_self_seq": 3809.4106,
+      "self_seq_delta": -3426.1057,
+      "v3_3_self_total": 25152.7683,
+      "v3_4_self_total": 23933.802499999998,
+      "self_total_delta": -1218.9658000000018,
+      "v3_3_direct_children_total": 0,
+      "v3_4_direct_children_total": 0,
+      "v3_3_reconstruction_error": 0.0,
+      "v3_4_reconstruction_error": 3.637978807091713e-12
+    },
+    {
+      "logical_path": "tma/WindowSubsystem",
+      "depth": 1,
+      "row_kind": "parent",
+      "module_design": "TmaV2WindowSubsystem",
+      "parent_logical_path": "tma",
+      "direct_children": "tma/WindowSubsystem/DescriptorService;tma/WindowSubsystem/WindowEngine",
+      "area_accounting": "hierarchical_total=self_total+direct_children_total;do_not_sum_parent_and_child_rows",
+      "v3_3_report_path": "core/subsystem",
+      "v3_4_report_path": "core_subsystem",
+      "v3_3_hierarchical_total": 153052.4689,
+      "v3_4_hierarchical_total": 72088.1867,
+      "hierarchical_total_delta": -80964.2822,
+      "hierarchical_total_delta_percent": -52.89969040153131,
+      "v3_3_self_comb": 0.1555,
+      "v3_4_self_comb": 0.0,
+      "self_comb_delta": -0.1555,
+      "v3_3_self_seq": 0.0,
+      "v3_4_self_seq": 0.0,
+      "self_seq_delta": 0.0,
+      "v3_3_self_total": 0.1555,
+      "v3_4_self_total": 0.0,
+      "self_total_delta": -0.1555,
+      "v3_3_direct_children_total": 153052.3134,
+      "v3_4_direct_children_total": 72088.1868,
+      "v3_3_reconstruction_error": 0.0,
+      "v3_4_reconstruction_error": -9.99999901978299e-05
+    },
+    {
+      "logical_path": "tma/WindowSubsystem/DescriptorService",
+      "depth": 2,
+      "row_kind": "parent",
+      "module_design": "TmaV2DescriptorService",
+      "parent_logical_path": "tma/WindowSubsystem",
+      "direct_children": "tma/WindowSubsystem/DescriptorService/DescriptorCompiler",
+      "area_accounting": "hierarchical_total=self_total+direct_children_total;do_not_sum_parent_and_child_rows",
+      "v3_3_report_path": "core/subsystem/descriptor",
+      "v3_4_report_path": "core_subsystem/descriptor",
+      "v3_3_hierarchical_total": 7663.4555,
+      "v3_4_hierarchical_total": 7431.2123,
+      "hierarchical_total_delta": -232.2431999999999,
+      "hierarchical_total_delta_percent": -3.0305284606924388,
+      "v3_3_self_comb": 1501.5456,
+      "v3_4_self_comb": 2013.5693,
+      "self_comb_delta": 512.0237000000002,
+      "v3_3_self_seq": 2677.5879,
+      "v3_4_self_seq": 2506.8787,
+      "self_seq_delta": -170.70919999999978,
+      "v3_3_self_total": 4179.1335,
+      "v3_4_self_total": 4520.448,
+      "self_total_delta": 341.3145000000004,
+      "v3_3_direct_children_total": 3484.322,
+      "v3_4_direct_children_total": 2910.7642,
+      "v3_3_reconstruction_error": 0.0,
+      "v3_4_reconstruction_error": 9.999999974752427e-05
+    },
+    {
+      "logical_path": "tma/WindowSubsystem/DescriptorService/DescriptorCompiler",
+      "depth": 3,
+      "row_kind": "leaf",
+      "module_design": "TmaV2DescriptorCompiler",
+      "parent_logical_path": "tma/WindowSubsystem/DescriptorService",
+      "direct_children": "",
+      "area_accounting": "leaf:hierarchical_total=self_total",
+      "v3_3_report_path": "core/subsystem/descriptor/compiler",
+      "v3_4_report_path": "core_subsystem/descriptor/compiler",
+      "v3_3_hierarchical_total": 3484.322,
+      "v3_4_hierarchical_total": 2910.7642,
+      "hierarchical_total_delta": -573.5578,
+      "hierarchical_total_delta_percent": -16.461102045103758,
+      "v3_3_self_comb": 2766.7527,
+      "v3_4_self_comb": 2758.4583,
+      "self_comb_delta": -8.294400000000223,
+      "v3_3_self_seq": 717.5693,
+      "v3_4_self_seq": 152.3059,
+      "self_seq_delta": -565.2634,
+      "v3_3_self_total": 3484.322,
+      "v3_4_self_total": 2910.7641999999996,
+      "self_total_delta": -573.5578000000005,
+      "v3_3_direct_children_total": 0,
+      "v3_4_direct_children_total": 0,
+      "v3_3_reconstruction_error": 0.0,
+      "v3_4_reconstruction_error": 4.547473508864641e-13
+    },
+    {
+      "logical_path": "tma/WindowSubsystem/WindowEngine",
+      "depth": 2,
+      "row_kind": "leaf",
+      "module_design": "TmaV2WindowEngine",
+      "parent_logical_path": "tma/WindowSubsystem",
+      "direct_children": "",
+      "area_accounting": "leaf:hierarchical_total=self_total",
+      "v3_3_report_path": "core/subsystem/engine",
+      "v3_4_report_path": "core_subsystem/engine",
+      "v3_3_hierarchical_total": 145388.8579,
+      "v3_4_hierarchical_total": 64656.9745,
+      "hierarchical_total_delta": -80731.8834,
+      "hierarchical_total_delta_percent": -55.52824650120593,
+      "v3_3_self_comb": 108405.2167,
+      "v3_4_self_comb": 48155.4729,
+      "self_comb_delta": -60249.743800000004,
+      "v3_3_self_seq": 36983.6413,
+      "v3_4_self_seq": 16501.5016,
+      "self_seq_delta": -20482.139700000003,
+      "v3_3_self_total": 145388.858,
+      "v3_4_self_total": 64656.9745,
+      "self_total_delta": -80731.88350000001,
+      "v3_3_direct_children_total": 0,
+      "v3_4_direct_children_total": 0,
+      "v3_3_reconstruction_error": -0.00010000000474974513,
+      "v3_4_reconstruction_error": 0.0
+    }
+  ],
+  "synthetic_operators": {
+    "DW01_add": {
+      "v3_3": {
+        "count": 252,
+        "area": 7256.005
+      },
+      "v3_4": {
+        "count": 281,
+        "area": 6454.2542
+      },
+      "area_delta": -801.7507999999998
+    },
+    "DW01_dec": {
+      "v3_3": {
+        "count": 5,
+        "area": 9.701
+      },
+      "v3_4": {
+        "count": 5,
+        "area": 6.8014
+      },
+      "area_delta": -2.8996000000000004
+    },
+    "DW01_inc": {
+      "v3_3": {
+        "count": 35,
+        "area": 648.3941
+      },
+      "v3_4": {
+        "count": 37,
+        "area": 667.6524999999999
+      },
+      "area_delta": 19.258399999999938
+    },
+    "DW01_sub": {
+      "v3_3": {
+        "count": 53,
+        "area": 242.0092
+      },
+      "v3_4": {
+        "count": 53,
+        "area": 254.4699
+      },
+      "area_delta": 12.460700000000003
+    },
+    "DW_cmp": {
+      "v3_3": {
+        "count": 945,
+        "area": 4163.312
+      },
+      "v3_4": {
+        "count": 855,
+        "area": 3820.4283
+      },
+      "area_delta": -342.88369999999986
+    },
+    "DW_leftsh": {
+      "v3_3": {
+        "count": 82,
+        "area": 11193.9892
+      },
+      "v3_4": {
+        "count": 104,
+        "area": 2739.9445
+      },
+      "area_delta": -8454.0447
+    },
+    "DW_mult_uns": {
+      "v3_3": {
+        "count": 1,
+        "area": 1759.7495
+      },
+      "v3_4": {
+        "count": 1,
+        "area": 1709.8907
+      },
+      "area_delta": -49.858799999999974
+    },
+    "DW_rightsh": {
+      "v3_3": {
+        "count": 34,
+        "area": 7406.1879
+      },
+      "v3_4": {
+        "count": 34,
+        "area": 16390.8984
+      },
+      "area_delta": 8984.710499999997
+    }
+  },
+  "legacy_synthetic_operators": {
+    "DW01_add": {
+      "count": 44,
+      "area": 960.0454000000001
+    },
+    "DW01_dec": {
+      "count": 12,
+      "area": 21.1094
+    },
+    "DW01_inc": {
+      "count": 22,
+      "area": 174.9725
+    },
+    "DW01_sub": {
+      "count": 16,
+      "area": 119.5065
+    },
+    "DW_cmp": {
+      "count": 460,
+      "area": 541.4434
+    },
+    "DW_leftsh": {
+      "count": 15,
+      "area": 55.4847
+    },
+    "DW_rightsh": {
+      "count": 10,
+      "area": 219.1253
+    }
+  },
+  "timing": {
+    "legacy_unmatched_corner": {
+      "wns_ns": -0.0302,
+      "reported_paths": 400,
+      "start_owner_counts": {
+        "core_ingress_setup": 100,
+        "core_ingress_iterator_command_decoded_dtypeBits_reg_5_": 96,
+        "core_subsystem_engine_candidate_8_reg_0_": 3,
+        "core_ingress_bulkRemaining_reg_8_": 1,
+        "core_subsystem_engine_lineState_1_reg_3_": 58,
+        "core_subsystem_engine_lineState_0_reg_3_": 41,
+        "core_subsystem_engine_lineState_3_reg_3_": 1,
+        "core_ingress_saved_in1_reg_8_": 100
+      },
+      "endpoint_owner_counts": {
+        "core_ingress_setup": 100,
+        "core_subsystem_engine_lineFillData_3_7_reg_49_": 2,
+        "core_subsystem_engine_lineFillData_0_7_reg_38_": 3,
+        "core_subsystem_engine_lineSharedBundleCount_1_reg_2_": 3,
+        "core_subsystem_engine_lineFillData_3_4_reg_99_": 1,
+        "core_subsystem_engine_lineFillData_0_7_reg_14_": 3,
+        "core_subsystem_engine_lineFillData_3_4_reg_7_": 1,
+        "core_subsystem_engine_linePermutations_3_4_6_reg_2_": 1,
+        "core_subsystem_engine_linePermutations_3_4_6_reg_1_": 1,
+        "core_subsystem_engine_lineFillData_0_7_reg_5_": 3,
+        "core_subsystem_engine_lineFillData_0_7_reg_45_": 3,
+        "core_subsystem_engine_linePermutations_3_4_9_reg_3_": 1,
+        "core_subsystem_engine_lineFillData_3_2_reg_121_": 2,
+        "core_subsystem_engine_linePermutations_3_4_7_reg_1_": 1,
+        "core_subsystem_engine_lineFillData_0_7_reg_23_": 3,
+        "core_subsystem_engine_linePermutations_3_4_5_reg_0_": 1,
+        "core_subsystem_engine_linePermutations_3_7_2_reg_2_": 1,
+        "core_subsystem_engine_linePermutations_3_7_4_reg_3_": 1,
+        "core_subsystem_engine_linePermutations_3_7_6_reg_3_": 1,
+        "core_subsystem_engine_linePermutations_3_7_7_reg_3_": 1,
+        "core_subsystem_engine_linePermutations_3_7_8_reg_2_": 1,
+        "core_subsystem_engine_linePermutations_3_7_10_reg_2_": 1,
+        "core_subsystem_engine_lineSharedMasks_3_7_reg_9_": 1,
+        "core_subsystem_engine_lineSharedMasks_3_7_reg_10_": 1,
+        "core_subsystem_engine_lineSharedAtoms_3_7_reg_27_": 1,
+        "core_subsystem_engine_linePermutations_3_7_4_reg_2_": 1,
+        "core_subsystem_engine_linePermutations_3_7_10_reg_3_": 1,
+        "core_subsystem_engine_lineGlobalMasks_3_7_reg_0_": 1,
+        "core_subsystem_engine_lineGlobalMasks_3_7_reg_3_": 1,
+        "core_subsystem_engine_linePermutations_3_4_7_reg_0_": 1,
+        "core_subsystem_engine_lineFillData_0_7_reg_8_": 3,
+        "core_subsystem_engine_lineFillData_0_7_reg_35_": 3,
+        "core_subsystem_engine_lineFillData_3_2_reg_98_": 2,
+        "core_subsystem_engine_linePermutations_3_4_8_reg_3_": 1,
+        "core_subsystem_engine_linePermutations_3_4_7_reg_2_": 1,
+        "core_subsystem_engine_lineFillData_0_7_reg_20_": 3,
+        "core_subsystem_engine_linePermutations_3_4_4_reg_2_": 1,
+        "core_subsystem_engine_linePermutations_3_4_5_reg_2_": 1,
+        "core_subsystem_engine_lineFillData_0_7_reg_2_": 3,
+        "core_subsystem_engine_linePermutations_3_4_9_reg_0_": 1,
+        "core_subsystem_engine_lineFillData_0_7_reg_29_": 3,
+        "core_subsystem_engine_lineFillData_0_7_reg_11_": 3,
+        "core_subsystem_engine_lineFillData_0_7_reg_17_": 3,
+        "core_subsystem_engine_lineSharedMasks_3_4_reg_7_": 1,
+        "core_subsystem_engine_lineSharedMasks_3_4_reg_6_": 1,
+        "core_subsystem_engine_lineSharedAtoms_3_4_reg_6_": 1,
+        "core_subsystem_engine_lineSharedMasks_3_4_reg_2_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_12_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_11_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_10_": 1,
+        "core_subsystem_engine_linePermutations_3_4_10_reg_0_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_6_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_2_": 1,
+        "core_subsystem_engine_linePermutations_3_4_9_reg_1_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_96_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_93_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_92_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_90_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_89_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_87_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_106_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_108_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_107_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_103_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_102_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_1_": 1,
+        "core_subsystem_engine_linePermutations_3_4_9_reg_2_": 1,
+        "core_subsystem_engine_linePermutations_3_4_7_reg_3_": 1,
+        "core_subsystem_engine_linePermutations_3_4_6_reg_0_": 1,
+        "core_subsystem_engine_linePermutations_3_4_5_reg_1_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_5_": 1,
+        "core_subsystem_engine_lineFillData_3_4_reg_3_": 1,
+        "core_sharedAtom_3_reg_1_": 10,
+        "core_sharedAtom_3_reg_2_": 10,
+        "core_sharedAtom_3_reg_0_": 10,
+        "core_sharedAtom_1_reg_1_": 10,
+        "core_sharedAtom_1_reg_2_": 10,
+        "core_sharedAtom_2_reg_0_": 10,
+        "core_sharedAtom_1_reg_0_": 10,
+        "core_sharedAtom_2_reg_1_": 10,
+        "core_sharedAtom_2_reg_2_": 10,
+        "core_sharedAtom_0_reg_2_": 5,
+        "core_sharedAtom_0_reg_1_": 5,
+        "descriptor": 100
+      },
+      "first_path": {
+        "startpoint": "core_ingress_setup/denseDim_reg_0_",
+        "endpoint": "core_ingress_setup/denseBytes_reg_63_",
+        "slack_ns": -0.0302
+      }
+    },
+    "v3_3": {
+      "wns_ns": -0.2178,
+      "reported_paths": 100,
+      "start_owner_counts": {
+        "windowPlanner": 100
+      },
+      "endpoint_owner_counts": {
+        "windowPlanner": 100
+      },
+      "first_path": {
+        "startpoint": "core/ingress/windowPlanner/R_4818",
+        "endpoint": "core/ingress/windowPlanner/cursorComponent_0_reg_22_",
+        "slack_ns": -0.2178
+      }
+    },
+    "v3_4": {
+      "wns_ns": -0.2268,
+      "reported_paths": 100,
+      "start_owner_counts": {
+        "windowPlanner": 100
+      },
+      "endpoint_owner_counts": {
+        "windowPlanner": 100
+      },
+      "first_path": {
+        "startpoint": "core_ingress/windowPlanner/R_2428",
+        "endpoint": "core_ingress/windowPlanner/globalStage_ram_reg_334_",
+        "slack_ns": -0.2268
+      }
+    }
+  }
+}

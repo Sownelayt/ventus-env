@@ -1,0 +1,99 @@
+{
+  "case_count": 108,
+  "case_matrix_sha256": "5a4d1ea4f3843693f071e5ef5f56faececfc2a8c8bc9e314237604e3653b2497",
+  "command": [
+    "/home/liyb/tma-refer/.venv/bin/modal",
+    "run",
+    "/home/liyb/ventus-env/benchmarks/tma-cycle-compare/suites/multi_context/same_direction/v4/modal_multi_context.py",
+    "--gpu",
+    "b200",
+    "--project",
+    "same",
+    "--direction",
+    "g2s",
+    "--output",
+    "/home/liyb/ventus-env/benchmarks/tma-cycle-compare/data/b200/cuda-13.3-sm100/multi_context/same_direction/g2s/20260803T101432Z__v4__d4bdf8df777c"
+  ],
+  "completed_at_utc": "2026-08-03T10:14:50.191113+00:00",
+  "device": {
+    "attempts": [
+      {
+        "child_timeout_seconds": 2,
+        "classification": "completed",
+        "command": [
+          "/opt/tma-multi-context/sm_100/probe",
+          "--project",
+          "same",
+          "--direction",
+          "g2s"
+        ],
+        "file": "attempt_01.json",
+        "function_timeout_seconds": 10,
+        "gpu": "b200",
+        "nvidia_smi_query": "NVIDIA B200, 10.0, 580.95.05, 1965, 183359\n",
+        "wall_seconds": 1.0176831059999998
+      }
+    ],
+    "backend": "nvidia-hardware",
+    "class": "b200",
+    "compute_capability": "10.0",
+    "cuda": "13.3.0",
+    "driver": "580.95.05",
+    "l2_bytes": 132644864,
+    "name": "NVIDIA B200",
+    "sm_clock_mhz": 1965,
+    "suite_manifest": {
+      "completed_at_utc": "2026-08-03T10:14:48.351381+00:00",
+      "direction": "g2s",
+      "gpu": "b200",
+      "measurement_release": "ColdThenHotV1",
+      "paid_attempts": 1,
+      "pairing": "one new TensorMap bank per case; repeat 0 first-uses it and repeat 1 immediately reuses the exact same bank in the same kernel",
+      "project": "same",
+      "repeats": 2,
+      "rows": 216,
+      "source_sha256": "0e2597abc4b8838d3d20992eaac2cfb35c6f5496e33966a44f608377441ebe36",
+      "warmups": 0
+    }
+  },
+  "forced_rerun_reason": "ColdThenHotV1 v4 formal pin; CUDA matrix unchanged, Ventus resource-limit accounting versioned",
+  "implementation": {
+    "release_state": "reference",
+    "version": "cuda-13.3-sm100"
+  },
+  "measurement": {
+    "context_definition": "same issuing thread serial/batched or occupancy-safe independent CTAs, N=1/2/4/8/16/32",
+    "data_residency": "distinct global lines and shared regions; no line-merge aliasing",
+    "descriptor_residency": "each case owns a new bank; ordinary loads may make descriptor bytes L2-hot, but no TMA/prefetch touches it before repeat 0; repeat 1 reuses the same address and contents",
+    "direction_definition": "independent g2s and s2g projects",
+    "duration_seconds": 17.784466,
+    "formal": true,
+    "paid_attempts": 1,
+    "pairing": "one new TensorMap bank per case; repeat 0 first-uses it and repeat 1 immediately reuses the exact same bank in one kernel",
+    "repeats": 2,
+    "resumed_from": null,
+    "started_at_utc": "2026-08-03T10:14:32.406647+00:00",
+    "wait_method": "per-command independent completion objects; batch completion span",
+    "warmups": 0
+  },
+  "measurement_release": "ColdThenHotV1",
+  "resource_limited_case_count": 0,
+  "run_id": "20260803T101432Z__v4__d4bdf8df777c",
+  "schema_version": 1,
+  "sources": {
+    "benchmarks/tma-cycle-compare/CURRENT_MEASUREMENT_RELEASE": "b3bf5b5ecbe6c61fedbb65ecce266531a2cb171f1162ef212c32c65d06ea253e",
+    "benchmarks/tma-cycle-compare/releases/ColdThenHotV1.json": "0af413031e48ca489f020feaf888b85bd4dce72248ec25f017c540c6e6dff3ab",
+    "benchmarks/tma-cycle-compare/suites/multi_context/same_direction/v4/cuda_multi_context.cu": "0e2597abc4b8838d3d20992eaac2cfb35c6f5496e33966a44f608377441ebe36",
+    "benchmarks/tma-cycle-compare/suites/multi_context/same_direction/v4/modal_multi_context.py": "c6a24a75d0759a5c8aad3f1bd3db3781c9c2d4353a703462deb6f406ef475cf3",
+    "benchmarks/tma-cycle-compare/suites/multi_context/same_direction/v4/run_ventus_multi_context_short.py": "fd53bc51406dbf1d693c84c5badcf5c963f5e0354fbeb82f66342484bd8c8627",
+    "benchmarks/tma-cycle-compare/suites/multi_context/same_direction/v4/suite.yaml": "75343ee32a8230de916605f58e4b23621904aaa995c90f5d5d54cf19d44fc90e",
+    "benchmarks/tma-cycle-compare/suites/multi_context/same_direction/v4/ventus_multi_context.cl": "f39efdff2d0ee961e59d8880b051c60cf1d71c73d67e9e2b2eb8c11f8359f3b8",
+    "benchmarks/tma-cycle-compare/suites/multi_context/same_direction/v4/ventus_multi_context.cpp": "813edce5999302ed2a0ecb0471eeb9be8eadbe49d09d630794a91b4cb29b0a0d"
+  },
+  "status": "passed",
+  "suite_id": "multi_context.same_direction",
+  "suite_version": "v4",
+  "test_signature": "d4bdf8df777cd1c57d185a260bae054fec1931b8b8e3e0b570567cbd8f7cc2b0",
+  "validation_problems": [],
+  "variant": "g2s"
+}

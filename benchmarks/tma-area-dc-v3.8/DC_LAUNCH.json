@@ -1,0 +1,32 @@
+{
+  "launched_at": "2026-08-01T12:15:50+08:00",
+  "host": "liyb@192.168.122.2",
+  "remote_project": "/home/liyb/tma-dc/20260801_23_tma_v3_8_cursor_pipeline_40x6_boundary_n12_tt1v85c_1500",
+  "tmux_session": "v38_cursor40p6_boundary_1500",
+  "variant": "v3_8_cursor_pipeline_line40_payload6_boundary_1500",
+  "configuration": "40 LineContext + 6 PayloadSlot + 4 Descriptor + one CursorCarry elastic stage",
+  "technology": "TSMC N12 tcbn12ffcllbwp16p90cpdtt1v85c",
+  "corner": "TT 1.0V 85C",
+  "frequency_mhz": 1500,
+  "timing_model": "boundary_typical",
+  "internal_wireload": "ZeroWireload",
+  "max_cores": 12,
+  "dc_timeout_seconds": 0,
+  "rtl_sha256": "b97fd25aba79773ef35940351dfaca84d5faf842de15984cc07ba00c31decc1c",
+  "precompile_dry_run": {
+    "status": "passed",
+    "dc_exit_status": 0,
+    "evidence": "STOP_BEFORE_COMPILE completed after analyze/elaborate and all required path groups were non-empty"
+  },
+  "template_fixes": [
+    "remove_path_group receives the persistent group name instead of an ephemeral collection handle",
+    "DMA_CORE_CTRL starts from all registers and subtracts the five explicitly owned child-module endpoint sets"
+  ],
+  "initial_health_check": {
+    "dc_exit_status": "RUNNING",
+    "tmux_alive": true,
+    "log_stage": "Running PRESTO HDLC",
+    "early_error_or_fatal": false
+  },
+  "monitoring_policy": "The formal run has no process timeout. Initial health was checked once; recurring monitoring is intentionally left to later result collection."
+}

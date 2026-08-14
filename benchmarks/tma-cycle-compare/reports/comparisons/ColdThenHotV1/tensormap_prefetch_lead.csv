@@ -1,0 +1,5 @@
+device,direction,rank,prefetch_hot_baseline_cycles,minimum_lead_hiding_within_2_cycles,lead_cycles,repeat0_cycles,note
+h100,g2s,2,,,0;32;64;96;128;192;256;384;512,490;490;443;396;349;349;349;396;396,lead is the requested delay between prefetch.tensormap and measured issue
+b200,g2s,2,,,0;32;64;96;128;192;256;384;512,439;439;393;347;347;393;393;393;394,lead is the requested delay between prefetch.tensormap and measured issue
+h100,s2g,2,,,0;32;64;96;128;192;256;384;512,240;165;142;127;93;93;93;93;93,lead is the requested delay between prefetch.tensormap and measured issue
+b200,s2g,2,,,0;32;64;96;128;192;256;384;512,227;197;168;99;93;93;93;93;93,lead is the requested delay between prefetch.tensormap and measured issue

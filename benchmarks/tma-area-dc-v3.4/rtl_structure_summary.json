@@ -1,0 +1,82 @@
+{
+  "rtl": "/home/liyb/ventus-env/gpgpu/generated-tma-v2-v3.4/tma.sv",
+  "state_bits": {
+    "standalone_tma": 28712,
+    "window_engine": 19567,
+    "line_context_per_entry": 240,
+    "payload_slot_per_entry": 1465,
+    "planner_elastic_queues": 2704,
+    "binder": 325,
+    "ingress": 1490,
+    "descriptor_service": 2884
+  },
+  "storage": {
+    "line_context_entries": 40,
+    "payload_entries": 6,
+    "payload_1024_bit_copies": 6
+  },
+  "wide_dynamic_shift_sites": 90,
+  "v3_3_comparison": {
+    "rtl": "/home/liyb/ventus-env/gpgpu/generated-tma-v2-v3.3/tma.sv",
+    "standalone_tma_state_bits": 53543,
+    "window_engine_state_bits": 38602,
+    "standalone_reduction_percent": 46.3758,
+    "window_engine_reduction_percent": 49.3109,
+    "oversized_dynamic_shift_sites": 16,
+    "max_dynamic_shift_result_width": 3071
+  },
+  "wide_datapath": {
+    "selected_payload_read_expressions": 1,
+    "bidirectional_line_permuter_expressions": 1,
+    "separate_direction_permuter_expressions": 0,
+    "oversized_dynamic_shift_sites": 0,
+    "max_dynamic_shift_result_width": 1024
+  },
+  "forbidden_hits": {
+    "runtime_divide": 0,
+    "runtime_remainder": 0,
+    "pmu_output": 0,
+    "old_window_payload": 0,
+    "owner_bitmap": 0,
+    "wide_response_broadcast": 0,
+    "old_fast_path": 0,
+    "duplicate_descriptor_result": 0
+  },
+  "module_contribution_bits": {
+    "TmaV2WindowEngine": 19440,
+    "TmaV2DescriptorService": 2681,
+    "Queue1_TmaV2CursorExpandToken": 1851,
+    "TmaV2WindowPlanner": 1643,
+    "TmaV3Ingress": 1490,
+    "Queue1_TmaV34CompactWindow": 466,
+    "Queue1_TmaV2GlobalMapToken": 387,
+    "TmaV2CommandBinder": 325,
+    "TmaV2DescriptorCompiler": 203,
+    "ram_2x52": 116,
+    "Queue1_TmaV3ControlRequest": 57,
+    "TmaV2DmaCore": 39,
+    "RRArbiter": 8,
+    "Queue2_Bool": 3,
+    "Queue2_TmaV34CompletionPayload": 3
+  },
+  "gates": {
+    "line_entries_40": true,
+    "payload_entries_6": true,
+    "payload_1024_copies_6": true,
+    "line_context_le_256": true,
+    "payload_slot_le_1472": true,
+    "window_engine_le_23161": true,
+    "standalone_le_37480": true,
+    "window_engine_reduction_ge_40_percent": true,
+    "standalone_reduction_ge_30_percent": true,
+    "planner_queues_le_5000": true,
+    "binder_le_384": true,
+    "ingress_le_1500": true,
+    "descriptor_service_le_3000": true,
+    "one_selected_payload_read": true,
+    "one_bidirectional_line_permuter": true,
+    "no_oversized_dynamic_shift": true,
+    "forbidden_absent": true
+  },
+  "all_gates_passed": true
+}

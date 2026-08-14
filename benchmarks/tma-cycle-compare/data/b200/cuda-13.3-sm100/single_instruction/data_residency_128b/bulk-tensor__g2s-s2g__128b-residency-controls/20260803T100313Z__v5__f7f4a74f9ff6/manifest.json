@@ -1,0 +1,12 @@
+{
+  "completed_at_utc": "2026-08-03T10:03:27.307264+00:00",
+  "descriptor_residency": "an untimed TMA using the exact same descriptor completes before payload preparation and both timed commands",
+  "gpu": "b200",
+  "measurement_release": "ColdThenHotV1",
+  "paid_attempts": 1,
+  "pairing": "same-kernel cold-hot, cold-cold and hot-hot payload controls",
+  "repeats": 2,
+  "rows": 24,
+  "source_sha256": "ff25d31d84682603e47899142cba9a7638f6bb99353cca4fe10f48f6b293609b",
+  "warmups": 0
+}

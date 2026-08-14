@@ -1,0 +1,17 @@
+{
+  "child_timeout_seconds": 2,
+  "classification": "completed",
+  "collected_at_utc": "2026-08-03T09:24:52.000774+00:00",
+  "command": [
+    "/opt/tma-multi-context/sm_90/probe",
+    "--project",
+    "mixed"
+  ],
+  "direction": "mixed",
+  "function_timeout_seconds": 10,
+  "gpu": "h100",
+  "nvidia_smi_query": "NVIDIA H100 80GB HBM3, 9.0, 580.95.05, 1980, 81559\n",
+  "project": "mixed",
+  "returncode": 0,
+  "wall_seconds": 0.6001065970000001
+}

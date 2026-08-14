@@ -1,0 +1,34 @@
+{
+  "technology": {
+    "process": "TSMC N12 CLN12FFCLL",
+    "library": "tcbn12ffcllbwp16p90cpdtt1v85c",
+    "corner": "TT 1.0V 85C",
+    "frequency_mhz": 1600,
+    "max_cores": 12
+  },
+  "variant": {
+    "name": "v3_6_release_40x6_desc4_boundary_allpaths_1600",
+    "design_top": "tma",
+    "line_context_entries": 40,
+    "payload_entries": 6,
+    "shared_entries": 8,
+    "write_ack_entries": 32,
+    "descriptor_entries": 4,
+    "pmu_elaborated": false,
+    "rtl_sha256": "63a4026e2c255a2f85f391639f968141a24aed9a0af30b1d580b12ea0301193f"
+  },
+  "timing": {
+    "model": "boundary_typical",
+    "input_delay_max_ns": 0.12,
+    "input_delay_min_ns": 0.03,
+    "output_delay_max_ns": 0.12,
+    "output_delay_min_ns": 0.03,
+    "output_load_pf": 0.01,
+    "max_transition_ns": 0.12,
+    "max_fanout": 16,
+    "driving_cell": "BUFFD2BWP16P90CPD",
+    "critical_range_ns": 0.2,
+    "max_area": 100000
+  }
+}
+

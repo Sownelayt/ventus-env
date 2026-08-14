@@ -1,0 +1,16 @@
+{
+  "checkpoint_count": 0,
+  "diagnostic_run_count": 0,
+  "errors": [
+    "/home/liyb/ventus-env/benchmarks/tma-cycle-compare/suites/single_instruction/tensormap_issue_attribution/v1/suite.yaml: missing ['commands', 'variants']"
+  ],
+  "expected_formal_runs": 28,
+  "formal_run_count": 28,
+  "local_links_checked": 12,
+  "measurement_release": "ColdThenHotV1",
+  "passed": false,
+  "release_hashes_checked": 360,
+  "schema_version": 2,
+  "suite_count": 9,
+  "tracked_generated_artifacts": 0
+}

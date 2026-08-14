@@ -1,0 +1,37 @@
+{
+  "release": "V3.5",
+  "completed_at": "2026-07-31",
+  "suites": {
+    "TmaV2Frontend_test": {
+      "passed": 8,
+      "failed": 0
+    },
+    "TmaV2Backend_test": {
+      "passed": 17,
+      "failed": 0
+    },
+    "TmaV2DmaCore_test": {
+      "passed": 19,
+      "failed": 0
+    }
+  },
+  "incremental_final_checks": {
+    "oob_fill_backpressure": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "coverage": [
+    "rank 1-5 and every supported dtype",
+    "contiguous, stride, OOB, swizzle and interleave",
+    "FP4 and FP6",
+    "Bulk and Tensor G2S/S2G",
+    "cross-line and misaligned masked transfers",
+    "descriptor prefetch, demand, PLRU and invalidation",
+    "single active command plus one lookahead",
+    "cache/shared/ack backpressure and same-cycle credit recycling",
+    "TLB coalescing and translation-cache reuse",
+    "32 KiB Planner II=1"
+  ],
+  "result": "passed"
+}

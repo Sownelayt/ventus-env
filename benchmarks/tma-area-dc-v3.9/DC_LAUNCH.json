@@ -1,0 +1,59 @@
+{
+  "launched_at": "2026-08-01T14:51:34+08:00",
+  "host": "liyb@192.168.122.2",
+  "purpose": "Matched module-level V3.8 versus V3.9 rank-2+3 Planner comparison",
+  "design_top": "TmaV34WindowPlanner",
+  "technology": "TSMC N12 tcbn12ffcllbwp6t16p96cpdtt1v85c",
+  "corner": "TT 1.0V 85C",
+  "frequency_mhz": 1500,
+  "boundary_driving_cell": "BUFFD2BWP6T16P96CPD",
+  "timing_model": "boundary_typical plus ZeroWireload",
+  "compile": "compile_ultra -retime -timing_high_effort_script; compile_ultra -incremental",
+  "critical_range_ns": 0.2,
+  "max_cores_per_project": 6,
+  "dc_timeout_seconds": 0,
+  "common_dc_script_sha256": "f53e36d96fecb38ca3a7a1258c02cfcda50ff2a5ad098dd07e2640093bd13b46",
+  "frontend_tests": {
+    "passed": 8,
+    "failed": 0,
+    "includes": "rank 1-5 golden, random backpressure and 32KiB 256-cycle consecutive-window II=1 test"
+  },
+  "variants": {
+    "v3_8_baseline": {
+      "remote_project": "/home/liyb/tma-dc/20260801_25_tma_v3_8_planner_module_p96_tt1v85c_1500",
+      "tmux_session": "v38_planner_p96_1500",
+      "rtl_sha256": "b97fd25aba79773ef35940351dfaca84d5faf842de15984cc07ba00c31decc1c",
+      "dry_run_status": 0,
+      "initial_formal_status": "RUNNING",
+      "final_status": 0,
+      "setup_wns_ns": -0.3021,
+      "setup_tns_ns": -127.18,
+      "setup_violating_paths": 838,
+      "total_cell_area": 21102.096566,
+      "elapsed_seconds": 1118,
+      "local_reports": "results/v3_8_planner_p96"
+    },
+    "v3_9_rank2p3": {
+      "remote_project": "/home/liyb/tma-dc/20260801_26_tma_v3_9_rank2p3_planner_module_p96_tt1v85c_1500",
+      "tmux_session": "v39_rank2p3_planner_p96_1500",
+      "source_sha256": "9da734b3d8569287415b7ad822d03cdd240e061f23a411448d6bf2cc8285a3c2",
+      "rtl_sha256": "2f42730ad64a450f6292857c64884dc52f148feb513e626e0ccbdcc320e6cade",
+      "dry_run_status": 0,
+      "initial_formal_status": "RUNNING",
+      "final_status": 0,
+      "setup_wns_ns": -0.041,
+      "setup_tns_ns": -9.66,
+      "setup_violating_paths": 391,
+      "total_cell_area": 26004.787414,
+      "elapsed_seconds": 1356,
+      "local_reports": "results/v3_9_rank2p3_planner_p96",
+      "pmu_off_full_tma_rtl_sha256": "66e49f306927cbee0d53769410aa31f5268102339e735dfd65e5aa838b905a10"
+    }
+  },
+  "structural_delta": {
+    "new_low_carry_queue_bits": 263,
+    "steady_state_windows_per_cycle": 1,
+    "tensor_command_latency_delta_cycles": 1
+  },
+  "conclusion": "Rank 2+3 preserves II=1 and removes 86.43% of the setup WNS deficit, but still misses 1.5GHz by 41ps and increases Planner cell area by 23.23%; do not freeze before a matched 2+2+1 module trial."
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "suite_id": "single_instruction.tensormap_issue_attribution",
+  "suite_version": "v1",
+  "scope": "single_instruction",
+  "project": "tensormap_issue_attribution",
+  "formal": {"warmups": 0, "paid_attempts": 1, "processes_per_device": 3},
+  "question": "Which part of the first-versus-second TMA issue delta is removed by front-end-only or full-path priming?",
+  "matrix": {
+    "direction": ["g2s", "s2g"],
+    "rank": [2],
+    "bytes": [128],
+    "prime_mode": ["none", "predicated_off_same_site", "other_tensormap_same_site"]
+  },
+  "descriptor_residency": "measured and control maps are L2-hot and explicitly prefetched with 1024-cycle lead",
+  "data_residency": "payload and destination are L2-hot",
+  "static_instruction_contract": "one predicate-guarded PTX TMA and one physical UTMALD/UTMAST site per fixed-rank kernel; ptxas branch lowering audited in SASS",
+  "interpretation": {
+    "predicated_off_same_site": "PTX predicate false, lowered to a branch around the one UTMA site; warms surrounding fetch/control path but sends no TMA request",
+    "other_tensormap_same_site": "full TMA issue and completion using another prefetched descriptor",
+    "measured": "two consecutive commands using the tested descriptor"
+  },
+  "timeouts": {"child_seconds": 2, "modal_function_seconds": 10, "retries": 0, "max_containers": 1},
+  "sources": [
+    "cuda_tma_issue_attribution.cu",
+    "audit_instruction_stream.py",
+    "modal_tma_issue_attribution.py"
+  ]
+}

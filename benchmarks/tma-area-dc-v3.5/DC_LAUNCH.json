@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-07-31T12:59:27+08:00",
+  "status": "running",
+  "rtl_sha256": "9255600bbdf1e72de4a9fd786293f2b469ed4f8e8a91e2f67ffbe50150c3974d",
+  "common_conditions": {
+    "library": "tcbn12ffcllbwp16p90cpdtt1v85c",
+    "process": "TSMC N12",
+    "corner": "TT 1.0 V 85 C",
+    "clock_mhz": 1500,
+    "max_cpus_per_project": 12,
+    "dc_timeout_seconds": 0,
+    "pmu": "off",
+    "memory_compiler": false
+  },
+  "projects": [
+    {
+      "model": "zero_wire",
+      "vm_path": "/home/liyb/tma-dc/20260731_18_tma_v3_5_zero_wire_n12_tt1v85c_1500",
+      "tmux_session": "tma_v3_5_zero_wire_dc",
+      "tmux_pane_pid_at_launch": 724391,
+      "dc_shell_pid_at_health_check": 724406,
+      "preflight_exit": 0,
+      "health_check": "tmux alive; dc_exit.status=RUNNING; dc_shell active; target DB loaded; no Fatal/Error"
+    },
+    {
+      "model": "boundary_typical",
+      "vm_path": "/home/liyb/tma-dc/20260731_19_tma_v3_5_boundary_typical_n12_tt1v85c_1500",
+      "tmux_session": "tma_v3_5_boundary_typical_dc",
+      "tmux_pane_pid_at_launch": 724393,
+      "dc_shell_pid_at_health_check": 724407,
+      "preflight_exit": 0,
+      "health_check": "tmux alive; dc_exit.status=RUNNING; dc_shell active; boundary driver accepted; target DB loaded; no Fatal/Error"
+    }
+  ],
+  "notes": [
+    "The two projects use byte-identical RTL and independent WORK, log and report directories.",
+    "PID values are launch-time evidence only and are not a completion indicator.",
+    "The boundary model is a pre-layout block-boundary estimate, not a post-route RC model."
+  ]
+}

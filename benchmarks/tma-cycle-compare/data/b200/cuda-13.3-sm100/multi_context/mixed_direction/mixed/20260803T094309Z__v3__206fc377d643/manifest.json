@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-08-03T09:43:19.524626+00:00",
+  "direction": "mixed",
+  "gpu": "b200",
+  "measurement_release": "ColdThenHotV1",
+  "paid_attempts": 1,
+  "pairing": "one new TensorMap bank per case; repeat 0 first-uses it and repeat 1 immediately reuses the exact same bank in the same kernel",
+  "project": "mixed",
+  "repeats": 2,
+  "rows": 540,
+  "source_sha256": "0e2597abc4b8838d3d20992eaac2cfb35c6f5496e33966a44f608377441ebe36",
+  "warmups": 0
+}

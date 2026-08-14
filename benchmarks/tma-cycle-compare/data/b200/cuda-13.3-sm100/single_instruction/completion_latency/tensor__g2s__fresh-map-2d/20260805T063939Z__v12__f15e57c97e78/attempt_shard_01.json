@@ -1,0 +1,129 @@
+{
+  "artifact_hashes": "24785bec0ddae614663409e7b8124580e3e7ab69e449587f54702260a7b92c64  /opt/tma-completion-latency-v12/artifacts/sm_100/probe.ptx\nf17e784e45868efcf4ba47fd39712935de2920ac1c7ec62ac0ff9701a6d9e8a4  /opt/tma-completion-latency-v12/artifacts/sm_100/probe.cubin\n0f2c2787b8af2a2960279cc42c4ef56c35b3fedf48278a4aac859b46600403e0  /opt/tma-completion-latency-v12/artifacts/sm_100/probe.sass\n621a4ee7823903b624d8ff45239a36b981f09b0978fc10b2a3f8dac16e571296  /opt/tma-completion-latency-v12/artifacts/sm_100/instruction_audit.json\n",
+  "child_timeout_seconds": 5,
+  "classification": "completed",
+  "collected_at_utc": "2026-08-05T06:40:03.512392+00:00",
+  "command": [
+    "/opt/tma-completion-latency-v12/artifacts/sm_100/probe",
+    "--project",
+    "tensor_2d",
+    "--shard-index",
+    "1",
+    "--shard-count",
+    "8"
+  ],
+  "function_timeout_seconds": 10,
+  "gpu": "b200",
+  "instruction_audit": {
+    "kernels": {
+      "bulk": {
+        "checks": {
+          "bank_pmevents_max": 1905,
+          "bank_pmevents_min": 9,
+          "kernel_bank_count": 80,
+          "ptx_arrive_expect_tx": 80,
+          "ptx_brx_idx": 0,
+          "ptx_bulk_g2s": 80,
+          "ptx_cleanup_try_wait": 80,
+          "ptx_pmevents": 76560,
+          "ptx_slot_labels": 640,
+          "ptx_slot_predicates": 560,
+          "ptx_slot_target_list_mentions": 640,
+          "ptx_tensor_g2s": 0,
+          "ptx_tensor_prefetch": 0,
+          "ptx_tensormap_acquire": 0,
+          "ptx_test_wait": 80,
+          "sass_brx": 0,
+          "sass_call_rel": 0,
+          "sass_cleanup_suspend": 80,
+          "sass_cleanup_try_wait": 80,
+          "sass_instruction_count": 96320,
+          "sass_tensor_g2s": 0,
+          "sass_tensormap_invalidate": 0,
+          "sass_tensormap_prefetch": 0,
+          "sass_test_wait_total": 240
+        },
+        "symbol": "completion_bulk_probe_v12"
+      },
+      "tensor_first_use": {
+        "checks": {
+          "bank_pmevents_max": 1905,
+          "bank_pmevents_min": 9,
+          "kernel_bank_count": 80,
+          "ptx_arrive_expect_tx": 80,
+          "ptx_brx_idx": 0,
+          "ptx_bulk_g2s": 0,
+          "ptx_cleanup_try_wait": 80,
+          "ptx_pmevents": 76560,
+          "ptx_slot_labels": 640,
+          "ptx_slot_predicates": 560,
+          "ptx_slot_target_list_mentions": 640,
+          "ptx_tensor_g2s": 400,
+          "ptx_tensor_prefetch": 0,
+          "ptx_tensormap_acquire": 80,
+          "ptx_test_wait": 80,
+          "sass_brx": 160,
+          "sass_call_rel": 0,
+          "sass_cleanup_suspend": 80,
+          "sass_cleanup_try_wait": 80,
+          "sass_instruction_count": 103360,
+          "sass_tensor_g2s": 400,
+          "sass_tensormap_invalidate": 80,
+          "sass_tensormap_prefetch": 0,
+          "sass_test_wait_total": 240
+        },
+        "symbol": "completion_tensor_no_prefetch_probe_v12"
+      },
+      "tensor_prefetched": {
+        "checks": {
+          "bank_pmevents_max": 1905,
+          "bank_pmevents_min": 9,
+          "kernel_bank_count": 80,
+          "ptx_arrive_expect_tx": 80,
+          "ptx_brx_idx": 0,
+          "ptx_bulk_g2s": 0,
+          "ptx_cleanup_try_wait": 80,
+          "ptx_pmevents": 76560,
+          "ptx_slot_labels": 640,
+          "ptx_slot_predicates": 560,
+          "ptx_slot_target_list_mentions": 640,
+          "ptx_tensor_g2s": 400,
+          "ptx_tensor_prefetch": 80,
+          "ptx_tensormap_acquire": 80,
+          "ptx_test_wait": 80,
+          "sass_brx": 160,
+          "sass_call_rel": 0,
+          "sass_cleanup_suspend": 80,
+          "sass_cleanup_try_wait": 80,
+          "sass_instruction_count": 104640,
+          "sass_tensor_g2s": 400,
+          "sass_tensormap_invalidate": 80,
+          "sass_tensormap_prefetch": 80,
+          "sass_test_wait_total": 240
+        },
+        "symbol": "completion_tensor_explicit_prefetch_probe_v12"
+      }
+    },
+    "ladder": {
+      "bank_size": 8,
+      "banks": 80,
+      "indexed_dispatches_per_timed_path": 0,
+      "points": 640,
+      "requested_step_cycles": 3
+    },
+    "passed": true
+  },
+  "nvidia_smi_query": "NVIDIA B200, 10.0, 580.95.05, 1965\n",
+  "project": "tensor_2d",
+  "returncode": 0,
+  "shard_count": 8,
+  "shard_index": 1,
+  "wait_audit": {
+    "cleanup_after_probe_timestamps": true,
+    "cleanup_try_wait_sites_per_selected_kernel": 1,
+    "timed_commands_per_kernel": 2,
+    "timed_poll_loop": false,
+    "timed_test_wait_sites_per_selected_kernel": 1
+  },
+  "wall_seconds": 1.910964087
+}

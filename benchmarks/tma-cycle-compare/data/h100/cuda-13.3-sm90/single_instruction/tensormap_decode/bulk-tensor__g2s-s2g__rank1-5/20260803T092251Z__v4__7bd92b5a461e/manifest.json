@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-08-03T09:23:04.985447+00:00",
+  "gpu": "h100",
+  "measurement_release": "ColdThenHotV1",
+  "paid_attempts": 1,
+  "pairing": "one descriptor per case; same-kernel first use then immediate reuse",
+  "repeats": 2,
+  "rows": 80,
+  "source_bundle_sha256": "1ea33744cc205797386e7f03727ddc46d3bdc92175237983b8a78c0dc472c142",
+  "warmups": 0
+}

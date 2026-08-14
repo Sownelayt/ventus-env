@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "release": "ColdThenHotV1",
+  "status": "frozen-method",
+  "formal_contract": {
+    "warmups": 0,
+    "repeats": 2,
+    "paid_attempts": 1,
+    "rule": "For every main latency case, repeat 0 is the first TMA use of a newly allocated TensorMap and repeat 1 immediately reuses the same address and contents. Explicitly labelled payload-residency and prefetch controls may prime descriptor state outside the timed region and must record that exception.",
+    "cold_definition": "Before repeat 0, no TMA command and no prefetch.tensormap has consumed the descriptor. Ordinary loads may make its bytes L2-resident where the suite explicitly records that state.",
+    "hot_definition": "Repeat 1 uses the exact same TensorMap address and fingerprint after repeat 0 completes, with no explicit prefetch inserted between the two commands.",
+    "identity_evidence": "Every Tensor row records descriptor address, fingerprint, prior_tma_use, pair_role and tma_prefetch_before_issue. Main latency validation requires 0 then 1; payload-residency v5 requires 1 then 2 after its recorded untimed primer. Identity remains equal within a pair and different between cases.",
+    "old_data_policy": "FreshTensorMapV1 is retracted because it measured two independent cold descriptors instead of a natural cold-then-hot pair. It is removed after every ColdThenHotV1 replacement validates."
+  },
+  "suites": {
+    "single_instruction.common_matrix": "v4",
+    "single_instruction.tensor_2d_capacity": "v4",
+    "single_instruction.tensormap_decode": "v4",
+    "single_instruction.data_residency_128b": "v5",
+    "single_instruction.control_items": "v3",
+    "single_instruction.completion_latency": "v12",
+    "multi_context.same_direction": "v4",
+    "multi_context.s2g_size_sweep": "v1",
+    "multi_context.mixed_direction": "v3"
+  }
+}

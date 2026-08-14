@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "formal_frozen_ventus": "V3.10",
+  "current_measured_ventus": {
+    "version": "V3.10",
+    "release_state": "measurement-frozen",
+    "measurement_release": "FreshTensorMapV1",
+    "note": "V3.10 is frozen for this measurement release by source, RTL/GVM library and dirty-patch SHA-256; this does not assert that the wider Ventus project is a product release."
+  },
+  "cuda_references": {
+    "h100": "cuda-13.3-sm90",
+    "b200": "cuda-13.3-sm100"
+  }
+}

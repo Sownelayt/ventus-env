@@ -1,0 +1,38 @@
+{
+  "technology": {
+    "process": "TSMC N12 CLN12FFCLL",
+    "library": "tcbn12ffcllbwp16p90cpdtt1v85c",
+    "corner": "TT 1.0V 85C",
+    "frequency_mhz": 1500,
+    "max_cores": 12
+  },
+  "variants": [
+    {
+      "name": "legacy_capacity",
+      "window_entries": 8,
+      "request_entries": 4,
+      "shared_entries": 4,
+      "write_ack_entries": 16,
+      "descriptor_entries": 2,
+      "measured": true
+    },
+    {
+      "name": "descriptor4",
+      "window_entries": 8,
+      "request_entries": 4,
+      "shared_entries": 4,
+      "write_ack_entries": 16,
+      "descriptor_entries": 4,
+      "measured": true
+    },
+    {
+      "name": "v3_1_full",
+      "window_entries": 24,
+      "request_entries": 16,
+      "shared_entries": 8,
+      "write_ack_entries": 32,
+      "descriptor_entries": 4,
+      "measured": true
+    }
+  ]
+}

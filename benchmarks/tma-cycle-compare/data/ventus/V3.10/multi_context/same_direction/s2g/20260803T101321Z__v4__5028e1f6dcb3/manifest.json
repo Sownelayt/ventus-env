@@ -1,0 +1,15 @@
+{
+  "case_timeout_seconds": 60.0,
+  "compile_timeout_seconds": 60.0,
+  "completed_at_utc": "2026-08-03T10:30:07.809090+00:00",
+  "device": "ventus",
+  "direction": "s2g",
+  "measured_cases": 94,
+  "measurement_release": "ColdThenHotV1",
+  "pairing": "same compiled kernel and exact same TensorMap bank: repeat 0 first-use, repeat 1 immediate reuse",
+  "project": "same",
+  "repeats": 2,
+  "requested_cases": 108,
+  "resource_limited_cases": 14,
+  "warmups": 0
+}

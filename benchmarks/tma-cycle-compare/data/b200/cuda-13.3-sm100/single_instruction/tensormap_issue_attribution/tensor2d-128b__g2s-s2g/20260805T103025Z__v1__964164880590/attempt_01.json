@@ -1,0 +1,23 @@
+{
+  "child_timeout_seconds": 2,
+  "classification": "completed",
+  "collected_at_utc": "2026-08-05T10:30:51.938912+00:00",
+  "commands": [
+    [
+      "/opt/tma-issue-attribution/sm_100/probe",
+      "none"
+    ],
+    [
+      "/opt/tma-issue-attribution/sm_100/probe",
+      "predicated_off"
+    ],
+    [
+      "/opt/tma-issue-attribution/sm_100/probe",
+      "other_tensormap"
+    ]
+  ],
+  "function_timeout_seconds": 10,
+  "nvidia_smi_query": "NVIDIA B200, 10.0, 580.95.05, 1965, 183359\n",
+  "returncode": 0,
+  "wall_seconds": 3.306362586
+}

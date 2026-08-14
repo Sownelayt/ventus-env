@@ -1,0 +1,113 @@
+{
+  "technology": "TSMC N12 tcbn12ffcllbwp16p90cpdtt1v85c",
+  "corner": "TT 1.0V 85C",
+  "frequency_mhz": 1500,
+  "clock_period_ns": 0.6667,
+  "pmu_elaborated": false,
+  "results": [
+    {
+      "configuration": "40+6 boundary-typical",
+      "total_cell_area": 107239.232109,
+      "combinational_area": 78610.436418,
+      "noncombinational_area": 28628.795690,
+      "cells": 348516,
+      "sequential_cells": 32414,
+      "setup_wns_ns": -0.2115,
+      "setup_tns_ns": -84.86,
+      "setup_violating_paths": 724,
+      "max_fanout_violations": 196,
+      "approximate_period_for_current_netlist_ns": 0.8782,
+      "approximate_fmax_ghz": 1.1387
+    },
+    {
+      "configuration": "40+6 ZeroWireload boundary",
+      "total_cell_area": 105260.706639,
+      "combinational_area": 76631.910948,
+      "noncombinational_area": 28628.795690,
+      "cells": 334773,
+      "sequential_cells": 32414,
+      "setup_wns_ns": -0.2192,
+      "setup_tns_ns": -90.06,
+      "setup_violating_paths": 662,
+      "max_fanout_violations": 0,
+      "approximate_period_for_current_netlist_ns": 0.8859,
+      "approximate_fmax_ghz": 1.1288
+    },
+    {
+      "configuration": "63+6 boundary-typical",
+      "total_cell_area": 115310.305451,
+      "combinational_area": 82333.896295,
+      "noncombinational_area": 32976.409156,
+      "cells": 375359,
+      "sequential_cells": 37336,
+      "setup_wns_ns": -0.2162,
+      "setup_tns_ns": -87.28,
+      "setup_violating_paths": 692,
+      "max_fanout_violations": 530,
+      "approximate_period_for_current_netlist_ns": 0.8829,
+      "approximate_fmax_ghz": 1.1327
+    },
+    {
+      "configuration": "40+8 boundary-typical",
+      "total_cell_area": 112413.849130,
+      "combinational_area": 81209.745906,
+      "noncombinational_area": 31204.103224,
+      "cells": 363106,
+      "sequential_cells": 35344,
+      "setup_wns_ns": -0.2159,
+      "setup_tns_ns": -88.07,
+      "setup_violating_paths": 608,
+      "max_fanout_violations": 222,
+      "approximate_period_for_current_netlist_ns": 0.8826,
+      "approximate_fmax_ghz": 1.1331
+    }
+  ],
+  "controlled_deltas": {
+    "boundary_typical_minus_zerowire_40x6": {
+      "total_cell_area": 1978.525470,
+      "percent": 1.8796,
+      "combinational_area": 1978.525470,
+      "noncombinational_area": 0.0
+    },
+    "63x6_minus_40x6_boundary": {
+      "total_cell_area": 8071.073342,
+      "percent": 7.5262,
+      "area_per_added_line_context": 350.916232,
+      "added_line_contexts": 23
+    },
+    "40x8_minus_40x6_boundary": {
+      "total_cell_area": 5174.617021,
+      "percent": 4.8253,
+      "area_per_added_payload_slot": 2587.308510,
+      "added_payload_slots": 2
+    },
+    "v3_7_40x6_zerowire_minus_v3_4_release": {
+      "v3_4_total_cell_area": 102368.916017,
+      "total_cell_area": 2891.790622,
+      "percent": 2.8249
+    },
+    "v3_7_40x6_boundary_minus_v3_4_release": {
+      "v3_4_total_cell_area": 102368.916017,
+      "total_cell_area": 4870.316092,
+      "percent": 4.7576
+    }
+  },
+  "decision": {
+    "capacity_choice": "40 LineContext + 6 PayloadSlot",
+    "reason": "63+6 adds 7.53% area and 40+8 adds 4.83% area without improving the Planner WNS. The fixed V3.7 performance regression already showed 40+6 is sufficient for the measured workload.",
+    "timing_gate_passed": false,
+    "next_timing_target": "Split or reformulate CursorExpand; capacity changes cannot close the approximately 0.21 ns Planner deficit."
+  },
+  "report_audit": {
+    "dc_exit_status": 2,
+    "mapped_outputs_written": true,
+    "error_classes": [
+      "remove_path_group called with ephemeral _sel collection handles",
+      "DMA_CORE_CTRL ref-name lookup became empty after TmaV2DmaCore flattening"
+    ],
+    "other_fatal_structural_errors_found": false,
+    "unresolved_references_found": false,
+    "black_boxes_found": false,
+    "macros_found": false
+  }
+}
