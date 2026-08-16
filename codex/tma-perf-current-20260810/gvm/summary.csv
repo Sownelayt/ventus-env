@@ -1,8 +1,0 @@
-case,backend,rc,time_s,run_log
-dma_tma_g2s_pingpong_perf_full,gvm,0,292,/home/liyb/ventus-env/testcases/_get_case/dma_tma_g2s_pingpong_perf_test/log/dma_tma_g2s_pingpong_perf_full.gvm.20260810-195351.run.log
-dma_tma_tensor_s2g_pingpong_manual_input_perf_full,gvm,0,330,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_s2g_pingpong_perf_test/log/dma_tma_tensor_s2g_pingpong_manual_input_perf_full.gvm.20260810-195351.run.log
-dma_tma_tensor_s2g_pingpong_tma_input_perf_full,gvm,0,293,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_s2g_pingpong_perf_test/log/dma_tma_tensor_s2g_pingpong_tma_input_perf_full.gvm.20260810-195351.run.log
-dma_tma_movement_profile_full,gvm,0,97,/home/liyb/ventus-env/testcases/_get_case/dma_tma_movement_profile_test/log/dma_tma_movement_profile_full.gvm.20260810-195351.run.log
-dma_tma_tensor_feature_perf_stress,gvm,0,197,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_feature_perf_test/log/dma_tma_tensor_feature_perf_stress.gvm.20260810-195351.run.log
-dma_tma_v2_bidirectional_contention_profile,gvm,1,992,/home/liyb/ventus-env/testcases/_get_case/dma_tma_bidirectional_contention_perf_test/log/dma_tma_v2_bidirectional_contention_profile.gvm.20260810-195351.run.log
-dma_tma_v2_reduce_profile,gvm,1,57,/home/liyb/ventus-env/testcases/_get_case/dma_tma_v2_reduce_perf_test/log/dma_tma_v2_reduce_profile.gvm.20260810-195351.run.log

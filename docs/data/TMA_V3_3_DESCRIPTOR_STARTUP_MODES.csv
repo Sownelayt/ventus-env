@@ -1,4 +1,0 @@
-mode,cycles,source
-cold_demand,213,maps_1_pf0 repeat 0
-consecutive_same_map_hit,189,maps_1_pf0 repeat 2
-explicit_prefetch_then_demand,189,maps_1_pf1 median

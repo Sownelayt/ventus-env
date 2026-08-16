@@ -1,3 +1,0 @@
-scenario,line_contexts,payload_slots,lines,cache_latency_cycles,issue_span_cycles,issue_cycles_per_line,max_line_contexts,max_payload_slots,response_stall_cycles,total_test_cycles,status
-contiguous_fixed_latency,40,6,256,38,255,1.000000,39,3,0,298,passed
-reordered_random_backpressure,40,6,128,5-50,,,40,6,47,217,passed

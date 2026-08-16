@@ -1,6 +1,0 @@
-engine_transfer_slots,engine_request_entries,effective_cache_credits,cache_response_latency_cycles,lines_128b,issue_span_cycles,finite_issue_cycles_per_line,asymptotic_credit_bound_cycles_per_line,command_cycles
-48,48,16,38,256,585,2.294118,2.375000,631
-48,48,24,38,256,395,1.549020,1.583333,441
-48,48,32,38,256,297,1.164706,1.187500,343
-48,48,40,38,256,255,1.000000,1.000000,301
-48,48,48,38,256,255,1.000000,1.000000,301

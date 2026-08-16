@@ -1,7 +1,0 @@
-{
-  "report_dir": "benchmarks/tma-area-dc-v3.3/results/v3_3_release/report",
-  "total_cell_area": 186040.853345,
-  "wns_ns": -0.2178,
-  "frequency_mhz": 1500,
-  "corner": "tcbn12ffcllbwp16p90cpdtt1v85c"
-}

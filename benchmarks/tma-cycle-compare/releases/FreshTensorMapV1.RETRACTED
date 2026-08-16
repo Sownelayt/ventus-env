@@ -1,4 +1,0 @@
-Retracted on 2026-08-03: repeat 0 and repeat 1 used different cold TensorMaps.
-The required method is one new TensorMap per case, cold first use followed by
-an immediate hot reuse of that same TensorMap. Do not use FreshTensorMapV1
-performance tables as the current comparison baseline.

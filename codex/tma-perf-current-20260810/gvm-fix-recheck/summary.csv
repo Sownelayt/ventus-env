@@ -1,2 +1,0 @@
-case,backend,rc,time_s,run_log
-dma_tma_v2_reduce_profile,gvm,1,48,/home/liyb/ventus-env/testcases/_get_case/dma_tma_v2_reduce_perf_test/log/dma_tma_v2_reduce_profile.gvm.20260810-204319.run.log

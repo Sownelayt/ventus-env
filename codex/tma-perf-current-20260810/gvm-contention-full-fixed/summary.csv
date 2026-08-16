@@ -1,2 +1,0 @@
-case,backend,rc,time_s,run_log
-dma_tma_v2_bidirectional_contention_profile,gvm,0,1310,/home/liyb/ventus-env/testcases/_get_case/dma_tma_bidirectional_contention_perf_test/log/dma_tma_v2_bidirectional_contention_profile.gvm.20260810-211759.run.log

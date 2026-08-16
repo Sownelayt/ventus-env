@@ -1,4 +1,0 @@
-case,backend,rc,time_s,run_log
-dma_tma_g2s_pingpong_perf_full,gvm,0,323,/home/liyb/ventus-env/testcases/_get_case/dma_tma_g2s_pingpong_perf_test/log/dma_tma_g2s_pingpong_perf_full.gvm.20260810-220140.run.log
-dma_tma_tensor_s2g_pingpong_manual_input_perf_full,gvm,0,296,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_s2g_pingpong_perf_test/log/dma_tma_tensor_s2g_pingpong_manual_input_perf_full.gvm.20260810-220140.run.log
-dma_tma_tensor_s2g_pingpong_tma_input_perf_full,gvm,0,296,/home/liyb/ventus-env/testcases/_get_case/dma_tma_tensor_s2g_pingpong_perf_test/log/dma_tma_tensor_s2g_pingpong_tma_input_perf_full.gvm.20260810-220140.run.log

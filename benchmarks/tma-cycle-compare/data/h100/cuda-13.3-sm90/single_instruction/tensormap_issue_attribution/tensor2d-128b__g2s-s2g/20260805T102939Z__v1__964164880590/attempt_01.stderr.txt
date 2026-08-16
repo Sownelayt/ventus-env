@@ -1,5 +1,0 @@
-mode=none wall_seconds=0.551233
-
-mode=predicated_off wall_seconds=0.553035
-
-mode=other_tensormap wall_seconds=0.422851
